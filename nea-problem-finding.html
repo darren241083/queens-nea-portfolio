@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NEA Problem Finding | Darren O'Neill</title>
+  <meta name="description" content="A concise teaching resource for helping GCSE and A-Level Product Design pupils begin NEA projects by finding real users, contexts and friction.">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="nea-resource-page">
+  <svg class="nea-icon-sprite" aria-hidden="true" focusable="false">
+    <symbol id="nea-icon-user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="8" r="3.2"></circle>
+      <path d="M5.5 20a6.5 6.5 0 0 1 13 0"></path>
+    </symbol>
+    <symbol id="nea-icon-place" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 21s6-5.4 6-11a6 6 0 0 0-12 0c0 5.6 6 11 6 11z"></path>
+      <circle cx="12" cy="10" r="2.1"></circle>
+    </symbol>
+    <symbol id="nea-icon-problem" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 3 22 20H2L12 3z"></path>
+      <path d="M12 9v5"></path>
+      <path d="M12 17h.01"></path>
+    </symbol>
+    <symbol id="nea-icon-product" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="m12 3 8 4.5v9L12 21l-8-4.5v-9L12 3z"></path>
+      <path d="m4 7.5 8 4.5 8-4.5"></path>
+      <path d="M12 12v9"></path>
+    </symbol>
+    <symbol id="nea-icon-opportunity" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 3v3"></path>
+      <path d="M12 18v3"></path>
+      <path d="M4.6 5.6 6.7 7.7"></path>
+      <path d="m17.3 16.3 2.1 2.1"></path>
+      <path d="M3 12h3"></path>
+      <path d="M18 12h3"></path>
+      <path d="m4.6 18.4 2.1-2.1"></path>
+      <path d="m17.3 7.7 2.1-2.1"></path>
+      <circle cx="12" cy="12" r="3.1"></circle>
+    </symbol>
+    <symbol id="nea-icon-evidence" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="6" y="4" width="12" height="16" rx="2"></rect>
+      <path d="M9 8h6"></path>
+      <path d="M9 12h6"></path>
+      <path d="M9 16h3"></path>
+    </symbol>
+    <symbol id="nea-icon-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="10.5" cy="10.5" r="5.5"></circle>
+      <path d="m15 15 5 5"></path>
+    </symbol>
+    <symbol id="nea-icon-question" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="9"></circle>
+      <path d="M9.8 9a2.5 2.5 0 0 1 4.8 1.1c0 1.8-2.4 2.2-2.4 4"></path>
+      <path d="M12 17h.01"></path>
+    </symbol>
+    <symbol id="nea-icon-loop" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M18.5 8.5A7.5 7.5 0 0 0 5.6 7"></path>
+      <path d="M18.5 4v4.5H14"></path>
+      <path d="M5.5 15.5A7.5 7.5 0 0 0 18.4 17"></path>
+      <path d="M5.5 20v-4.5H10"></path>
+    </symbol>
+    <symbol id="nea-icon-route" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="5" cy="6" r="2"></circle>
+      <circle cx="19" cy="18" r="2"></circle>
+      <path d="M7 6h4a3 3 0 0 1 0 6H9a3 3 0 0 0 0 6h8"></path>
+    </symbol>
+    <symbol id="nea-icon-mindmap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="7" cy="7" r="2.3"></circle>
+      <circle cx="17" cy="6" r="2.1"></circle>
+      <circle cx="18" cy="17" r="2.3"></circle>
+      <circle cx="6" cy="16" r="2.1"></circle>
+      <path d="M9.2 6.8 14.9 6.2"></path>
+      <path d="M8.3 8.9 15.9 15.6"></path>
+      <path d="M6.5 9.3 6.2 13.9"></path>
+    </symbol>
+  </svg>
+
+  <header class="site-hero">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">Teaching resource</p>
+        <h1><span>NEA Problem</span><span>Finding</span></h1>
+        <p class="tagline nea-hero-quote">&ldquo;A strong NEA does not start with a product. It starts with a real <span class="nea-highlight nea-highlight--people">person</span> experiencing <span class="nea-highlight nea-highlight--problems">friction</span> in a real <span class="nea-highlight nea-highlight--places">context</span>.&rdquo;</p>
+        <p class="intro">Start with real people, real contexts and friction worth investigating. Product decisions come later.</p>
+      </div>
+      <figure class="nea-hero-image-panel">
+        <img src="assets/images/nea-climbing-friction.png" alt="A climber on a rock ledge dealing with tangled rope and equipment, showing outdoor activity friction.">
+        <figcaption>Friction in context</figcaption>
+      </figure>
+    </div>
+  </header>
+
+  <main>
+    <section class="section section-primary" aria-labelledby="starting-products-heading">
+      <div class="section-header">
+        <p class="section-kicker">Starting point</p>
+        <h2 id="starting-products-heading">Find the friction first</h2>
+      </div>
+
+      <article class="portfolio-band">
+        <div class="band-copy">
+          <h3>Products come later</h3>
+          <p>Notice <span class="nea-highlight nea-highlight--problems">friction</span> before choosing a product.</p>
+        </div>
+        <div>
+          <div class="nea-contrast-flow" aria-label="Weak product-first start compared with stronger friction-first start">
+            <article class="nea-comparison-card nea-contrast-card nea-lens nea-lens--products">
+              <div class="nea-card-heading">
+                <svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-product"></use></svg>
+                <p class="section-kicker">Weak start</p>
+              </div>
+              <blockquote>&ldquo;I&rsquo;m going to make a guitar stand.&rdquo;</blockquote>
+              <span class="nea-tag nea-lens--products">Product first</span>
+            </article>
+
+            <article class="nea-comparison-card nea-contrast-card nea-lens nea-lens--opportunities">
+              <div class="nea-card-heading">
+                <svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-opportunity"></use></svg>
+                <p class="section-kicker">Stronger start</p>
+              </div>
+              <blockquote>&ldquo;A <span class="nea-highlight nea-highlight--people">pupil</span> carrying a guitar to school experiences transport and organisation <span class="nea-highlight nea-highlight--problems">friction</span> when moving between home, lessons and rehearsals.&rdquo;</blockquote>
+              <span class="nea-tag nea-lens--opportunities">User + friction first</span>
+            </article>
+
+            <figure class="nea-comparison-media">
+              <img src="assets/images/nea-guitar-friction.png" alt="A pupil carrying a guitar case, school bag and sheet music outside school, showing transport and organisation friction.">
+              <figcaption>Friction in context: carrying, storing and organising music equipment.</figcaption>
+            </figure>
+          </div>
+          <p class="nea-key-line">&ldquo;A product idea can wait until the user, context and evidence are clearer.&rdquo;</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="section section-quiet" aria-labelledby="sequence-heading">
+      <div class="section-header">
+        <p class="section-kicker">NEA thinking</p>
+        <h2 id="sequence-heading">NEA thinking is a loop, not a straight line</h2>
+      </div>
+
+      <div class="nea-thinking-panel">
+        <div class="nea-thinking-copy">
+          <p class="nea-thinking-label">Sketch the messy route from noticing to opportunity.</p>
+          <p>Problem finding is deliberately messy: pupils test what they notice against users, context and evidence before making product decisions.</p>
+        </div>
+
+        <div class="nea-thinking-surface" aria-label="Static thinking surface showing a non-linear route through early NEA problem finding.">
+          <svg class="nea-thinking-route" viewBox="0 0 1000 520" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+            <path class="nea-thinking-route-line nea-thinking-route-line--main" d="M105 110 C285 35 420 148 350 235 C285 315 150 260 188 382 C226 506 480 438 620 338 C748 246 870 308 828 410 C790 500 630 486 532 388 C438 294 612 188 815 128"></path>
+            <path class="nea-thinking-route-line nea-thinking-route-line--return" d="M748 186 C558 154 520 286 650 346 C766 400 756 470 610 480 C454 492 330 405 294 290 C265 192 340 106 466 120"></path>
+            <path class="nea-thinking-route-line nea-thinking-route-line--probe" d="M222 144 C262 246 392 252 456 210 C540 158 620 176 662 256"></path>
+          </svg>
+
+          <div class="nea-thinking-labels">
+            <span class="nea-thinking-node nea-thinking-node--notice">Notice</span>
+            <span class="nea-thinking-node nea-thinking-node--question">Question</span>
+            <span class="nea-thinking-node nea-thinking-node--evidence">Gather evidence</span>
+            <span class="nea-thinking-node nea-thinking-node--sense">Make sense</span>
+            <span class="nea-thinking-node nea-thinking-node--reframe">Reframe</span>
+            <span class="nea-thinking-node nea-thinking-node--opportunity">Spot opportunity</span>
+          </div>
+        </div>
+      </div>
+
+      <p class="nea-key-line">&ldquo;Explore <span class="nea-highlight nea-highlight--problems">friction</span> before product decisions. Pupils can move forward, but they should keep returning to the <span class="nea-highlight nea-highlight--people">user</span>, the <span class="nea-highlight nea-highlight--places">context</span> and the <span class="nea-highlight nea-highlight--evidence">evidence</span>.&rdquo;</p>
+    </section>
+
+    <section class="section" aria-labelledby="framework-heading">
+      <div class="section-header">
+        <p class="section-kicker">Friction-finding prompts</p>
+        <h2 id="framework-heading">Five prompts before ideas</h2>
+        <p class="nea-mindmap-note"><svg class="nea-icon nea-mindmap-icon" aria-hidden="true"><use href="#nea-icon-mindmap"></use></svg> Mind-map starter: words that can help you begin exploring.</p>
+      </div>
+
+      <div class="nea-card-grid">
+        <article class="nea-info-card nea-reveal-card nea-lens nea-lens--people">
+          <div class="nea-card-heading">
+            <svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-user"></use></svg>
+            <h3 class="nea-starter-heading"><svg class="nea-icon nea-mindmap-icon" aria-hidden="true"><use href="#nea-icon-mindmap"></use></svg> People</h3>
+          </div>
+          <p class="nea-card-prompt">Who is actually involved?</p>
+          <details class="nea-reveal">
+            <summary>Specific users</summary>
+            <div class="nea-reveal-content">
+              <p>Be specific. Avoid &ldquo;people who like music&rdquo;. Use &ldquo;a <span class="nea-highlight nea-highlight--people">Year 8 pupil</span> carrying a guitar to school&rdquo; or &ldquo;a <span class="nea-highlight nea-highlight--people">music teacher</span> setting up a lunchtime club&rdquo;.</p>
+            </div>
+          </details>
+        </article>
+
+        <article class="nea-info-card nea-reveal-card nea-lens nea-lens--places">
+          <div class="nea-card-heading">
+            <svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-place"></use></svg>
+            <h3 class="nea-starter-heading"><svg class="nea-icon nea-mindmap-icon" aria-hidden="true"><use href="#nea-icon-mindmap"></use></svg> Places</h3>
+          </div>
+          <p class="nea-card-prompt">Where does the activity happen?</p>
+          <details class="nea-reveal">
+            <summary>Place examples</summary>
+            <div class="nea-reveal-content">
+              <p><span class="nea-highlight nea-highlight--places">Classroom</span>, rehearsal space, bus, car boot, school corridor, outdoor route, campsite, home, workshop.</p>
+            </div>
+          </details>
+        </article>
+
+        <article class="nea-info-card nea-reveal-card nea-lens nea-lens--problems">
+          <div class="nea-card-heading">
+            <svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-problem"></use></svg>
+            <h3 class="nea-starter-heading"><svg class="nea-icon nea-mindmap-icon" aria-hidden="true"><use href="#nea-icon-mindmap"></use></svg> Friction</h3>
+          </div>
+          <p class="nea-card-prompt">What gets in the way?</p>
+          <details class="nea-reveal">
+            <summary>Friction prompts</summary>
+            <div class="nea-reveal-content">
+              <p>What is <span class="nea-highlight nea-highlight--problems">awkward</span>, unsafe, uncomfortable, messy, slow, wasteful, expensive, difficult to store or difficult to clean?</p>
+            </div>
+          </details>
+        </article>
+
+        <article class="nea-info-card nea-reveal-card nea-lens nea-lens--products">
+          <div class="nea-card-heading">
+            <svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-product"></use></svg>
+            <h3 class="nea-starter-heading"><svg class="nea-icon nea-mindmap-icon" aria-hidden="true"><use href="#nea-icon-mindmap"></use></svg> Existing products</h3>
+          </div>
+          <p class="nea-card-prompt">What already exists?</p>
+          <details class="nea-reveal">
+            <summary>Product assumptions</summary>
+            <div class="nea-reveal-content">
+              <p>What works well? What does not? What <span class="nea-highlight nea-highlight--products">assumptions</span> are built into current products?</p>
+            </div>
+          </details>
+        </article>
+
+        <article class="nea-info-card nea-reveal-card nea-lens nea-lens--opportunities">
+          <div class="nea-card-heading">
+            <svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-opportunity"></use></svg>
+            <h3 class="nea-starter-heading"><svg class="nea-icon nea-mindmap-icon" aria-hidden="true"><use href="#nea-icon-mindmap"></use></svg> Opportunities</h3>
+          </div>
+          <p class="nea-card-prompt">What could be improved?</p>
+          <details class="nea-reveal">
+            <summary>Opportunity timing</summary>
+            <div class="nea-reveal-content">
+              <p>This should come after <span class="nea-highlight nea-highlight--evidence">investigation</span>, not before.</p>
+            </div>
+          </details>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-quiet" aria-labelledby="journey-heading">
+      <div class="section-header">
+        <p class="section-kicker">Journey mapping</p>
+        <h2 id="journey-heading">Before / During / After</h2>
+        <p>&ldquo;Useful <span class="nea-highlight nea-highlight--problems">friction</span> often becomes visible when we map what a <span class="nea-highlight nea-highlight--people">user</span> does before, during and after an activity.&rdquo;</p>
+      </div>
+
+      <article class="portfolio-band">
+        <div class="band-copy">
+          <h3>Context: Exploring outdoors</h3>
+          <p>Each stage can reveal <span class="nea-highlight nea-highlight--problems">friction</span>.</p>
+        </div>
+        <div>
+          <div class="nea-journey-grid nea-journey-line">
+            <article class="nea-info-card nea-reveal-card nea-lens nea-lens--places">
+              <div class="nea-card-heading">
+                <svg class="nea-icon nea-mindmap-icon" aria-hidden="true"><use href="#nea-icon-mindmap"></use></svg>
+                <h3>Before</h3>
+              </div>
+              <p class="nea-card-prompt">What happens before the activity starts?</p>
+              <details class="nea-reveal">
+                <summary>Outdoor example</summary>
+                <div class="nea-reveal-content">
+                  <p>Look for friction while the <span class="nea-highlight nea-highlight--people">user</span> prepares, packs and makes decisions.</p>
+                  <ul class="nea-list">
+                    <li>Packing a bag</li>
+                    <li>Checking the weather</li>
+                    <li>Loading the car</li>
+                    <li>Choosing a route</li>
+                  </ul>
+                </div>
+              </details>
+            </article>
+
+            <article class="nea-info-card nea-reveal-card nea-lens nea-lens--problems">
+              <div class="nea-card-heading">
+                <svg class="nea-icon nea-mindmap-icon" aria-hidden="true"><use href="#nea-icon-mindmap"></use></svg>
+                <h3>During</h3>
+              </div>
+              <p class="nea-card-prompt">What interrupts the activity?</p>
+              <details class="nea-reveal">
+                <summary>Outdoor example</summary>
+                <div class="nea-reveal-content">
+                  <p>Watch for moments where the user has to stop, adapt or put up with something <span class="nea-highlight nea-highlight--problems">awkward</span>.</p>
+                  <ul class="nea-list">
+                    <li>Carrying items</li>
+                    <li>Needing water or snacks</li>
+                    <li>Keeping children safe</li>
+                    <li>Finding somewhere clean to rest</li>
+                  </ul>
+                </div>
+              </details>
+            </article>
+
+            <article class="nea-info-card nea-reveal-card nea-lens nea-lens--opportunities">
+              <div class="nea-card-heading">
+                <svg class="nea-icon nea-mindmap-icon" aria-hidden="true"><use href="#nea-icon-mindmap"></use></svg>
+                <h3>After</h3>
+              </div>
+              <p class="nea-card-prompt">What friction continues afterwards?</p>
+              <details class="nea-reveal">
+                <summary>Outdoor example</summary>
+                <div class="nea-reveal-content">
+                  <p>Good <span class="nea-highlight nea-highlight--opportunities">opportunities</span> often appear after the main activity has finished.</p>
+                  <ul class="nea-list">
+                    <li>Cleaning muddy kit</li>
+                    <li>Drying wet clothing</li>
+                    <li>Storing equipment</li>
+                    <li>Finding lost items</li>
+                  </ul>
+                </div>
+              </details>
+            </article>
+          </div>
+          <p class="nea-key-line">&ldquo;The designer&rsquo;s job is to notice friction: effort, risk, awkwardness or frustration.&rdquo;</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="section nea-compact-section" aria-labelledby="trigger-heading">
+      <div class="section-header">
+        <p class="section-kicker">Friction trigger words</p>
+        <h2 id="trigger-heading">Words that reveal friction</h2>
+      </div>
+
+      <div class="nea-chip-groups" aria-label="Grouped friction trigger words">
+        <article class="nea-chip-group nea-lens nea-lens--problems">
+          <h3 class="nea-friction-heading"><svg class="nea-icon nea-mindmap-icon" aria-hidden="true"><use href="#nea-icon-mindmap"></use></svg> Physical friction</h3>
+          <ul class="nea-chip-list">
+            <li class="nea-chip">Too heavy</li>
+            <li class="nea-chip">Too awkward</li>
+            <li class="nea-chip">Too uncomfortable</li>
+          </ul>
+        </article>
+        <article class="nea-chip-group nea-lens nea-lens--problems">
+          <h3 class="nea-friction-heading"><svg class="nea-icon nea-mindmap-icon" aria-hidden="true"><use href="#nea-icon-mindmap"></use></svg> Emotional friction</h3>
+          <ul class="nea-chip-list">
+            <li class="nea-chip">Too stressful</li>
+            <li class="nea-chip">Too easy to lose</li>
+            <li class="nea-chip">Doesn&rsquo;t suit the user</li>
+          </ul>
+        </article>
+        <article class="nea-chip-group nea-lens nea-lens--places">
+          <h3 class="nea-friction-heading"><svg class="nea-icon nea-mindmap-icon" aria-hidden="true"><use href="#nea-icon-mindmap"></use></svg> Context / environment friction</h3>
+          <ul class="nea-chip-list">
+            <li class="nea-chip">Too messy</li>
+            <li class="nea-chip">Too hard to store</li>
+            <li class="nea-chip">Too hard to clean</li>
+            <li class="nea-chip">Doesn&rsquo;t fit the space</li>
+          </ul>
+        </article>
+        <article class="nea-chip-group nea-lens nea-lens--evidence">
+          <h3 class="nea-friction-heading"><svg class="nea-icon nea-mindmap-icon" aria-hidden="true"><use href="#nea-icon-mindmap"></use></svg> Access / safety friction</h3>
+          <ul class="nea-chip-list">
+            <li class="nea-chip">Too unsafe</li>
+            <li class="nea-chip">Not accessible enough</li>
+            <li class="nea-chip">Too expensive</li>
+          </ul>
+        </article>
+        <article class="nea-chip-group nea-lens nea-lens--opportunities">
+          <h3 class="nea-friction-heading"><svg class="nea-icon nea-mindmap-icon" aria-hidden="true"><use href="#nea-icon-mindmap"></use></svg> Social friction</h3>
+          <ul class="nea-chip-list">
+            <li class="nea-chip">Too slow</li>
+            <li class="nea-chip">Too much waste</li>
+            <li class="nea-chip">Hard to share</li>
+          </ul>
+        </article>
+      </div>
+
+      <details class="nea-reveal nea-standalone-reveal">
+        <summary>How pupils use these words</summary>
+        <div class="nea-reveal-content">
+          <p>Put a trigger word next to a real <span class="nea-highlight nea-highlight--people">user</span> and a real <span class="nea-highlight nea-highlight--places">place</span>. Then ask: when does this happen, why does it matter, and what <span class="nea-highlight nea-highlight--evidence">evidence</span> could prove it?</p>
+        </div>
+      </details>
+    </section>
+
+    <section class="section section-quiet" aria-labelledby="statement-heading">
+      <div class="section-header">
+        <p class="section-kicker">Problem statements</p>
+        <h2 id="statement-heading">Turning friction into a problem statement</h2>
+        <p class="nea-statement-note">Ingredients, not a sentence to copy.</p>
+      </div>
+
+      <div class="nea-statement-frame nea-statement-grid" aria-label="Problem statement ingredients">
+        <article class="nea-statement-ingredient nea-lens nea-lens--people">
+          <h3>User</h3>
+          <p>Who is affected?</p>
+        </article>
+        <article class="nea-statement-ingredient nea-lens nea-lens--opportunities">
+          <h3>Action / need</h3>
+          <p>What are they trying to do?</p>
+        </article>
+        <article class="nea-statement-ingredient nea-lens nea-lens--problems">
+          <h3>Friction</h3>
+          <p>What gets in the way?</p>
+        </article>
+        <article class="nea-statement-ingredient nea-lens nea-lens--places">
+          <h3>Evidence / context</h3>
+          <p>Where does it happen, and how do you know?</p>
+        </article>
+        <article class="nea-statement-ingredient nea-lens nea-lens--opportunities">
+          <h3>Opportunity direction</h3>
+          <p>What might be worth exploring?</p>
+        </article>
+      </div>
+
+      <details class="nea-reveal nea-standalone-reveal">
+        <summary>How to use the ingredients</summary>
+        <div class="nea-reveal-content">
+          <p>Use these as prompts to connect a specific <span class="nea-highlight nea-highlight--people">user</span>, an action or need, the <span class="nea-highlight nea-highlight--problems">friction</span> they experience, and the context or evidence that makes the opportunity worth exploring.</p>
+        </div>
+      </details>
+
+      <p class="nea-example-caution">These are possible starting points for discussion, not finished NEA statements.</p>
+
+      <div class="nea-example-list">
+        <article class="nea-info-card nea-reveal-card">
+          <h3>Music example</h3>
+          <p class="nea-card-prompt">A possible user, friction and context.</p>
+          <details class="nea-reveal">
+            <summary>Show ingredient set</summary>
+            <div class="nea-reveal-content">
+              <dl class="nea-ingredient-list">
+                <div>
+                  <dt>User</dt>
+                  <dd>A young musician travelling between home, school and rehearsals.</dd>
+                </div>
+                <div>
+                  <dt>Friction</dt>
+                  <dd>Sheet music, headphones and small accessories are easy to forget or damage.</dd>
+                </div>
+                <div>
+                  <dt>Evidence / context</dt>
+                  <dd>Movement between lessons, rehearsals and home routines.</dd>
+                </div>
+                <div>
+                  <dt>Opportunity direction</dt>
+                  <dd>Explore easier ways to organise and protect small music items.</dd>
+                </div>
+              </dl>
+            </div>
+          </details>
+        </article>
+
+        <article class="nea-info-card nea-reveal-card">
+          <h3>Classroom example</h3>
+          <p class="nea-card-prompt">A named school context with clear friction.</p>
+          <details class="nea-reveal">
+            <summary>Show ingredient set</summary>
+            <div class="nea-reveal-content">
+              <dl class="nea-ingredient-list">
+                <div>
+                  <dt>User</dt>
+                  <dd>A Year 10 DT pupil working in a practical lesson.</dd>
+                </div>
+                <div>
+                  <dt>Friction</dt>
+                  <dd>Tools, materials and an iPad create clutter on limited desk space.</dd>
+                </div>
+                <div>
+                  <dt>Evidence / context</dt>
+                  <dd>Moving between designing, making, recording and packing away.</dd>
+                </div>
+                <div>
+                  <dt>Opportunity direction</dt>
+                  <dd>Explore clearer organisation for shared lesson workspaces.</dd>
+                </div>
+              </dl>
+            </div>
+          </details>
+        </article>
+
+        <article class="nea-info-card nea-reveal-card">
+          <h3>Outdoor example</h3>
+          <p class="nea-card-prompt">A common activity explored as a possible design opportunity.</p>
+          <details class="nea-reveal">
+            <summary>Show ingredient set</summary>
+            <div class="nea-reveal-content">
+              <dl class="nea-ingredient-list">
+                <div>
+                  <dt>User</dt>
+                  <dd>A family walker returning from poor weather.</dd>
+                </div>
+                <div>
+                  <dt>Friction</dt>
+                  <dd>Muddy or wet outdoor kit can make the car or home messy.</dd>
+                </div>
+                <div>
+                  <dt>Evidence / context</dt>
+                  <dd>After-walk routines, storage, cleaning and transport.</dd>
+                </div>
+                <div>
+                  <dt>Opportunity direction</dt>
+                  <dd>Explore easier ways to separate, dry, clean or store kit.</dd>
+                </div>
+              </dl>
+            </div>
+          </details>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="gcse-contexts-heading">
+      <div class="section-header">
+        <p class="section-kicker">GCSE contexts</p>
+        <h2 id="gcse-contexts-heading">GCSE contextual challenge examples</h2>
+      </div>
+
+      <div class="nea-card-grid nea-card-grid-three">
+        <article class="nea-info-card nea-reveal-card">
+          <h3>Making or enjoying music</h3>
+          <div class="nea-context-tags" aria-label="Design lenses in this example">
+            <span class="nea-tag nea-lens--people"><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-user"></use></svg> People</span>
+            <span class="nea-tag nea-lens--problems"><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-problem"></use></svg> Friction</span>
+            <span class="nea-tag nea-lens--opportunities"><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-opportunity"></use></svg> Opportunities</span>
+          </div>
+          <p class="nea-card-prompt">Look at carrying, storing, setting up and protecting music kit.</p>
+          <details class="nea-reveal">
+            <summary>Possible users</summary>
+            <div class="nea-reveal-content">
+              <p><span class="nea-highlight nea-highlight--people">Music pupils</span>, performers, teachers, buskers, pupils carrying instruments.</p>
+            </div>
+          </details>
+          <details class="nea-reveal">
+            <summary>Possible frictions</summary>
+            <div class="nea-reveal-content">
+              <p>Full-size instruments can be awkward to carry, store or use, especially for younger pupils or pupils travelling through busy school spaces. Large instruments may create transport, storage, safety or access friction.</p>
+            </div>
+          </details>
+          <details class="nea-reveal">
+            <summary>Possible opportunities</summary>
+            <div class="nea-reveal-content">
+              <p>Evidence might point towards lighter, compact or easier-to-carry responses, depending on what user research shows.</p>
+            </div>
+          </details>
+        </article>
+
+        <article class="nea-info-card nea-reveal-card">
+          <h3>In the classroom</h3>
+          <div class="nea-context-tags" aria-label="Design lenses in this example">
+            <span class="nea-tag nea-lens--people"><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-user"></use></svg> People</span>
+            <span class="nea-tag nea-lens--problems"><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-problem"></use></svg> Friction</span>
+            <span class="nea-tag nea-lens--opportunities"><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-opportunity"></use></svg> Opportunities</span>
+          </div>
+          <p class="nea-card-prompt">Watch how people work, move, store things and share space.</p>
+          <details class="nea-reveal">
+            <summary>Possible users</summary>
+            <div class="nea-reveal-content">
+              <p>Pupils, teachers, technicians, SEND pupils, visitors.</p>
+            </div>
+          </details>
+          <details class="nea-reveal">
+            <summary>Possible frictions</summary>
+            <div class="nea-reveal-content">
+              <p>Desk clutter, storage, posture, device use, tool organisation, quick packing away, accessibility.</p>
+            </div>
+          </details>
+          <details class="nea-reveal">
+            <summary>Possible opportunities</summary>
+            <div class="nea-reveal-content">
+              <p>Evidence could point towards clearer desk organisation, adaptable storage, better access to tools or easier movement between designing and making.</p>
+            </div>
+          </details>
+        </article>
+
+        <article class="nea-info-card nea-reveal-card">
+          <h3>Exploring outdoors</h3>
+          <div class="nea-context-tags" aria-label="Design lenses in this example">
+            <span class="nea-tag nea-lens--people"><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-user"></use></svg> People</span>
+            <span class="nea-tag nea-lens--problems"><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-problem"></use></svg> Friction</span>
+            <span class="nea-tag nea-lens--opportunities"><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-opportunity"></use></svg> Opportunities</span>
+          </div>
+          <p class="nea-card-prompt">Map what happens before, during and after the activity.</p>
+          <details class="nea-reveal">
+            <summary>Possible users</summary>
+            <div class="nea-reveal-content">
+              <p>Walkers, families, cyclists, campers, school groups, dog walkers.</p>
+            </div>
+          </details>
+          <details class="nea-reveal">
+            <summary>Possible frictions</summary>
+            <div class="nea-reveal-content">
+              <p>Carrying kit, wet or muddy equipment, safety, resting, weather protection, storage, sustainability.</p>
+            </div>
+          </details>
+          <details class="nea-reveal">
+            <summary>Possible opportunities</summary>
+            <div class="nea-reveal-content">
+              <p>User evidence could suggest easier ways to carry, separate, dry, clean or store outdoor kit before, during or after an activity.</p>
+            </div>
+          </details>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-quiet" aria-labelledby="alevel-stretch-heading">
+      <div class="section-header">
+        <p class="section-kicker">A-Level stretch</p>
+        <h2 id="alevel-stretch-heading">Freedom brings responsibility</h2>
+        <p>&ldquo;At A-level, freedom brings responsibility.&rdquo;</p>
+        <div class="nea-visual-note">
+          <span class="nea-tag nea-lens--evidence"><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-evidence"></use></svg> Evidence</span>
+          <span class="nea-tag nea-lens--opportunities"><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-opportunity"></use></svg> Justified opportunity</span>
+        </div>
+      </div>
+
+      <div class="nea-example-list">
+        <article class="nea-info-card nea-reveal-card nea-lens nea-lens--evidence">
+          <h3>A-level depth check</h3>
+          <p class="nea-card-prompt">Can the context sustain investigation, modelling and testing?</p>
+          <details class="nea-reveal">
+            <summary>Depth checklist</summary>
+            <div class="nea-reveal-content">
+              <ul class="nea-checklist" aria-label="A-Level project depth checklist">
+                <li>Real user or client</li>
+                <li>Genuine user need or friction</li>
+                <li>Clear constraints</li>
+                <li>Primary research potential</li>
+                <li>Technical challenge</li>
+                <li>Scope for modelling and testing</li>
+                <li>Materials and process depth</li>
+                <li>Sustainability or lifecycle considerations</li>
+                <li>Evaluation with real users</li>
+              </ul>
+            </div>
+          </details>
+          <details class="nea-reveal">
+            <summary>Warning sign</summary>
+            <div class="nea-reveal-content">
+              <p class="nea-reveal-warning">&ldquo;A simple product type only has depth if the user evidence, uncertainty, technical challenge, modelling and testing are strong enough.&rdquo;</p>
+            </div>
+          </details>
+        </article>
+      </div>
+    </section>
+
+    <section class="section closing-section" aria-labelledby="closing-heading">
+      <div class="closing-copy nea-final-message">
+        <p class="section-kicker">Final teaching point</p>
+        <div class="nea-final-icon" aria-hidden="true">
+          <svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-opportunity"></use></svg>
+        </div>
+        <h2 id="closing-heading">&ldquo;Today is not about choosing a final product. It is about finding a worthwhile design opportunity.&rdquo;</h2>
+        <a class="pdf-link" href="index.html">Back to portfolio</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
