@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>NEA Timeline</title>
+<meta name="description" content="GCSE AQA D&amp;T NEA timeline for Year 11 at The Queen's School, Chester: where you should be today and what is due next.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="nea-timeline.css">
+<style>
+  /* Page chrome only — the timeline itself is styled by nea-timeline.css */
+  :root{
+    color-scheme: light dark;
+    --paper:#EEEFE8;
+    --paper-dot:#CBCFC1;
+    --surface:#FFFFFF;
+    --ink:#1C1F1A;
+    --ink-soft:#54584E;
+    --line:#C7CABB;
+    --accent:#DD5A1C;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#17191A;
+      --paper-dot:#2B2E29;
+      --surface:#1F2220;
+      --ink:#EDEEE7;
+      --ink-soft:#A9AC9F;
+      --line:#383B34;
+      --accent:#FF7A3D;
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#17191A;
+    --paper-dot:#2B2E29;
+    --surface:#1F2220;
+    --ink:#EDEEE7;
+    --ink-soft:#A9AC9F;
+    --line:#383B34;
+    --accent:#FF7A3D;
+  }
+
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    padding-inline:20px;
+    padding-block:0 40px;
+    background:
+      radial-gradient(circle, var(--paper-dot) 1.3px, transparent 1.3px) 0 0/26px 26px,
+      var(--paper);
+    color:var(--ink);
+    font-family:"IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  }
+  img{max-width:100%;}
+  [hidden]{display:none !important;}
+  .wrap{max-width:1320px;margin-inline:auto;}
+
+  .skip-link{
+    position:absolute; z-index:60; top:12px; left:-9999px;
+    padding:12px 18px; border:1px solid #9d9d95; border-radius:3px;
+    background:#ffffff; color:#111111;
+    font-family:Arial,Helvetica,sans-serif;
+    font-size:0.78rem; font-weight:700; letter-spacing:0.1em;
+    text-decoration:none; text-transform:uppercase;
+  }
+  .skip-link:focus{ left:12px; }
+
+  /* Site nav, identical to the rest of the site */
+  .site-nav{
+    position:sticky; z-index:50; top:0;
+    margin-inline:-20px; padding-inline:20px;
+    background:#f4f4f1; border-bottom:1px solid #d8d8d2;
+    font-family:Arial,Helvetica,sans-serif;
+  }
+  .site-nav-inner{
+    display:flex; width:min(1320px,100%); margin:0 auto; padding:16px 0;
+    gap:12px 28px; align-items:center; justify-content:space-between; flex-wrap:wrap;
+  }
+  .site-nav-brand{
+    color:#111111; font-size:0.78rem; font-weight:700; letter-spacing:0.14em;
+    text-decoration:none; text-transform:uppercase;
+  }
+  .site-nav-list{
+    display:flex; gap:10px 26px; margin:0; padding:0; flex-wrap:wrap; list-style:none;
+  }
+  .site-nav-list a{
+    display:inline-block; padding-bottom:3px; border-bottom:2px solid transparent;
+    color:#626660; font-size:0.72rem; font-weight:700; letter-spacing:0.12em;
+    text-decoration:none; text-transform:uppercase;
+    transition:color 180ms ease, border-color 180ms ease;
+  }
+  .site-nav-brand:hover, .site-nav-list a:hover{ color:#111111; }
+  .site-nav-list a[aria-current="page"]{ border-bottom-color:#596a64; color:#111111; }
+  .site-nav-brand:focus-visible, .site-nav-list a:focus-visible{
+    outline:3px solid rgba(47,95,87,0.34); outline-offset:3px;
+  }
+  @media (max-width:760px){
+    .site-nav{ position:static; }
+    .site-nav-inner{ padding:12px 0; gap:8px 20px; }
+  }
+
+  /* Hero: title and one line, nothing else */
+  .hero{ padding-block:34px 24px; display:flex; flex-direction:column; gap:12px; }
+  .eyebrow{
+    display:flex; gap:10px; align-items:center;
+    color:var(--accent);
+    font-family:"IBM Plex Mono", monospace;
+    font-size:0.76rem; font-weight:600; letter-spacing:0.14em; text-transform:uppercase;
+  }
+  .eyebrow::before{ content:""; width:22px; height:2px; background:var(--accent); display:inline-block; }
+  .hero h1{
+    margin:0;
+    font-family:"Big Shoulders Display", ui-sans-serif, sans-serif;
+    font-size:clamp(2.6rem, 9vw, 4.6rem); font-weight:800;
+    letter-spacing:0.01em; line-height:0.95; text-transform:uppercase;
+  }
+  .hero .lede{ margin:0; max-width:60ch; color:var(--ink-soft); font-size:1.05rem; line-height:1.6; }
+</style>
+<script src="nea-timeline.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to content</a>
+<nav class="site-nav" aria-label="Primary">
+  <div class="site-nav-inner">
+    <a class="site-nav-brand" href="index.html">Mr O&rsquo;Neill</a>
+    <ul class="site-nav-list">
+      <li><a href="index.html">Portfolio</a></li>
+      <li><a href="nea-problem-finding.html">NEA Problem Finding</a></li>
+      <li><a href="consumer-profile.html">Consumer Profile</a></li>
+      <li><a href="initial-ideas.html">Initial Ideas</a></li>
+      <li><a href="nea-journey.html">NEA Journey</a></li>
+      <li><a href="nea-timeline.html" aria-current="page">NEA Timeline</a></li>
+      <li><a href="revision-design-theory.html">Revision</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="wrap" id="main-content">
+  <header class="hero">
+    <p class="eyebrow">GCSE AQA D&amp;T 8552 &middot; Year 11</p>
+    <h1>NEA Timeline</h1>
+    <p class="lede">Where you should be today, and what&rsquo;s due next.</p>
+  </header>
+
+  <main class="nea-timeline" data-nea-timeline data-nea-theme="auto">
+    <noscript>
+      <p class="nea-tl-preview">This timeline needs JavaScript. Key dates: development complete Fri 27 Nov, final design locked Fri 4 Dec, templates and first CAM parts cut Wed 16 Dec, prototype complete Fri 5 Feb, NEA hand-in Fri 12 Feb 2027.</p>
+    </noscript>
+  </main>
+</div>
+</body>
+</html>

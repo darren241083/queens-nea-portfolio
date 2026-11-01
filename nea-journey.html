@@ -1,0 +1,1279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NEA Journey | Darren O'Neill</title>
+  <meta name="description" content="An interactive explainer of how a GCSE Design and Technology NEA folder should flow, from task analysis to final evaluation, and why every piece is there.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="nea-timeline.css">
+  <script src="script.js" defer></script>
+  <script src="nea-journey.js" defer></script>
+<script src="nea-timeline.js" defer></script>
+</head>
+<body class="nea-resource-page nea-journey-page">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <nav class="site-nav" aria-label="Primary">
+    <div class="site-nav-inner">
+      <a class="site-nav-brand" href="index.html">Mr O&rsquo;Neill</a>
+      <ul class="site-nav-list">
+        <li><a href="index.html">Portfolio</a></li>
+        <li><a href="nea-problem-finding.html">NEA Problem Finding</a></li>
+        <li><a href="consumer-profile.html">Consumer Profile</a></li>
+        <li><a href="initial-ideas.html">Initial Ideas</a></li>
+        <li><a href="nea-journey.html" aria-current="page">NEA Journey</a></li>
+        <li><a href="nea-timeline.html">NEA Timeline</a></li>
+        <li><a href="revision-design-theory.html">Revision</a></li>
+      </ul>
+    </div>
+  </nav>
+<div class="nea-strip" data-nea-timeline-strip>
+  <!-- Filled in by nea-timeline.js; links to the full NEA timeline -->
+</div>
+
+  <svg class="nea-icon-sprite" aria-hidden="true" focusable="false">
+    <symbol id="nea-icon-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.2"></circle><path d="M5.5 20a6.5 6.5 0 0 1 13 0"></path></symbol>
+    <symbol id="nea-icon-place" viewBox="0 0 24 24"><path d="M12 21s6-5.4 6-11a6 6 0 0 0-12 0c0 5.6 6 11 6 11z"></path><circle cx="12" cy="10" r="2.1"></circle></symbol>
+    <symbol id="nea-icon-problem" viewBox="0 0 24 24"><path d="M12 3 22 20H2L12 3z"></path><path d="M12 9v5"></path><path d="M12 17h.01"></path></symbol>
+    <symbol id="nea-icon-product" viewBox="0 0 24 24"><path d="m12 3 8 4.5v9L12 21l-8-4.5v-9L12 3z"></path><path d="m4 7.5 8 4.5 8-4.5"></path><path d="M12 12v9"></path></symbol>
+    <symbol id="nea-icon-opportunity" viewBox="0 0 24 24"><path d="M12 3v3"></path><path d="M12 18v3"></path><path d="M4.6 5.6 6.7 7.7"></path><path d="m17.3 16.3 2.1 2.1"></path><path d="M3 12h3"></path><path d="M18 12h3"></path><path d="m4.6 18.4 2.1-2.1"></path><path d="m17.3 7.7 2.1-2.1"></path><circle cx="12" cy="12" r="3.1"></circle></symbol>
+    <symbol id="nea-icon-evidence" viewBox="0 0 24 24"><rect x="6" y="4" width="12" height="16" rx="2"></rect><path d="M9 8h6"></path><path d="M9 12h6"></path><path d="M9 16h3"></path></symbol>
+    <symbol id="nea-icon-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="5.5"></circle><path d="m15 15 5 5"></path></symbol>
+    <symbol id="nea-icon-question" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M9.8 9a2.5 2.5 0 0 1 4.8 1.1c0 1.8-2.4 2.2-2.4 4"></path><path d="M12 17h.01"></path></symbol>
+    <symbol id="nea-icon-loop" viewBox="0 0 24 24"><path d="M18.5 8.5A7.5 7.5 0 0 0 5.6 7"></path><path d="M18.5 4v4.5H14"></path><path d="M5.5 15.5A7.5 7.5 0 0 0 18.4 17"></path><path d="M5.5 20v-4.5H10"></path></symbol>
+    <symbol id="nea-icon-mindmap" viewBox="0 0 24 24"><circle cx="7" cy="7" r="2.3"></circle><circle cx="17" cy="6" r="2.1"></circle><circle cx="18" cy="17" r="2.3"></circle><circle cx="6" cy="16" r="2.1"></circle><path d="M9.2 6.8 14.9 6.2"></path><path d="M8.3 8.9 15.9 15.6"></path><path d="M6.5 9.3 6.2 13.9"></path></symbol>
+    <symbol id="nea-icon-pencil" viewBox="0 0 24 24"><path d="M4 20h4L19 9l-4-4L4 16v4z"></path><path d="m13.5 6.5 4 4"></path></symbol>
+    <symbol id="nea-icon-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="5"></circle><circle cx="12" cy="12" r="1.4"></circle></symbol>
+    <symbol id="nea-icon-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4V5z"></path><path d="M8 9.5h8"></path><path d="M8 12.5h5"></path></symbol>
+    <symbol id="nea-icon-ruler" viewBox="0 0 24 24"><path d="M3 17 17 3l4 4L7 21l-4-4z"></path><path d="m7 13 2 2"></path><path d="m10 10 2 2"></path><path d="m13 7 2 2"></path></symbol>
+    <symbol id="nea-icon-plan" viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="17" rx="2"></rect><path d="M9 4V3h6v1"></path><path d="m8.5 11 1.5 1.5L13 9.5"></path><path d="M8.5 16.5h7"></path></symbol>
+    <symbol id="nea-icon-wrench" viewBox="0 0 24 24"><path d="M15.5 4.5a4.5 4.5 0 0 0-4.3 5.8L4 17.5 6.5 20l7.2-7.2a4.5 4.5 0 0 0 5.8-4.3l-2.7 2.7-2.9-.6-.6-2.9 2.7-2.7z"></path></symbol>
+    <symbol id="nea-icon-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7"></path></symbol>
+    <symbol id="nea-icon-cross" viewBox="0 0 24 24"><path d="M6.5 6.5l11 11"></path><path d="M17.5 6.5l-11 11"></path></symbol>
+    <symbol id="nea-icon-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2"></rect><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"></path></symbol>
+    <symbol id="nea-icon-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"></path></symbol>
+    <symbol id="nea-icon-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></symbol>
+    <symbol id="nea-icon-arrow-left" viewBox="0 0 24 24"><path d="M19 12H5"></path><path d="m11 6-6 6 6 6"></path></symbol>
+    <symbol id="nea-icon-screen" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="1.5"></rect><path d="M12 16v4"></path><path d="M8 20h8"></path></symbol>
+    <symbol id="nea-icon-layers" viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5 9-5z"></path><path d="m3 13 9 5 9-5"></path><path d="m3 17.5 9 5 9-5"></path></symbol>
+  </svg>
+
+  <div class="journey-bar" data-journey-bar>
+    <div class="journey-bar-inner">
+      <nav class="journey-minimap" aria-label="NEA stages">
+        <ol class="journey-minimap-list" data-minimap>
+          <li><a href="#stage-task-analysis" data-node="task-analysis" title="1 &middot; Task Analysis"><span class="journey-dot" aria-hidden="true">1</span><span class="visually-hidden">Stage 1: Task Analysis</span></a></li>
+          <li><a href="#stage-narrow" data-node="narrow" title="2 &middot; Narrow the Focus"><span class="journey-dot" aria-hidden="true">2</span><span class="visually-hidden">Stage 2: Narrow the Focus</span></a></li>
+          <li><a href="#stage-consumer" data-node="consumer" title="3 &middot; Consumer Profile"><span class="journey-dot" aria-hidden="true">3</span><span class="visually-hidden">Stage 3: Consumer Profile</span></a></li>
+          <li><a href="#stage-products" data-node="products" title="4 &middot; Existing Products"><span class="journey-dot" aria-hidden="true">4</span><span class="visually-hidden">Stage 4: Existing Products</span></a></li>
+          <li><a href="#stage-spec" data-node="spec" title="5 &middot; Design Brief &amp; Specification"><span class="journey-dot" aria-hidden="true">5</span><span class="visually-hidden">Stage 5: Design Brief and Specification</span></a></li>
+          <li class="journey-minimap-loop"><a href="#stage-loop" data-node="loop" title="Iterate throughout: the loop"><span class="journey-dot" aria-hidden="true"><svg class="nea-icon"><use href="#nea-icon-loop"></use></svg></span><span class="visually-hidden">The iterative loop</span></a></li>
+          <li><a href="#stage-client" data-node="client" title="6 &middot; Client Check-ins"><span class="journey-dot" aria-hidden="true">6</span><span class="visually-hidden">Stage 6: Client Check-ins</span></a></li>
+          <li><a href="#stage-drawings" data-node="drawings" title="7 &middot; Final Drawings"><span class="journey-dot" aria-hidden="true">7</span><span class="visually-hidden">Stage 7: Final Drawings</span></a></li>
+          <li><a href="#stage-manufacturing" data-node="manufacturing" title="8 &middot; Manufacturing Specification"><span class="journey-dot" aria-hidden="true">8</span><span class="visually-hidden">Stage 8: Manufacturing Specification</span></a></li>
+          <li><a href="#step-make" data-node="make" title="9 &middot; Make the Prototype"><span class="journey-dot" aria-hidden="true">9</span><span class="visually-hidden">Stage 9: Make the Prototype</span></a></li>
+          <li><a href="#step-test" data-node="test" title="10 &middot; Test With the Client"><span class="journey-dot" aria-hidden="true">10</span><span class="visually-hidden">Stage 10: Test With the Client</span></a></li>
+          <li><a href="#step-evaluate" data-node="evaluate" title="11 &middot; Evaluate vs the Spec"><span class="journey-dot" aria-hidden="true">11</span><span class="visually-hidden">Stage 11: Evaluate vs the Spec</span></a></li>
+        </ol>
+      </nav>
+      <p class="journey-bar-status" data-journey-status aria-hidden="true">Intro</p>
+      <button class="journey-mode-toggle" type="button" aria-pressed="false" data-mode-toggle>
+        <svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-screen"></use></svg>
+        <span>Present mode</span>
+      </button>
+    </div>
+  </div>
+
+  <header class="site-hero journey-slide" id="intro" data-slide data-title="Intro" aria-labelledby="intro-heading">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">GCSE Design &amp; Technology &middot; Non-exam assessment</p>
+        <h1 id="intro-heading" tabindex="-1"><span>Every Piece</span><span>Has a Reason</span></h1>
+        <p class="tagline">How your NEA folder should flow &mdash; one stage to the next, and why each one is there.</p>
+        <div class="journey-hero-actions">
+          <a class="pdf-link" href="#rule">Start the journey</a>
+          <a class="pdf-link" href="#big-picture">See all eleven stages</a>
+        </div>
+      </div>
+      <aside class="journey-hero-panel" aria-label="The two habits this page keeps coming back to">
+        <p class="section-kicker">Two habits, all the way through</p>
+        <div class="journey-hero-habit nea-lens nea-lens--evidence">
+          <span class="journey-hero-habit-icon" aria-hidden="true"><svg class="nea-icon"><use href="#nea-icon-question"></use></svg></span>
+          <p><strong>A reason for every page.</strong> If a page can&rsquo;t say why it&rsquo;s there, ask what came before it that should have raised the question.</p>
+        </div>
+        <div class="journey-hero-habit nea-lens nea-lens--problems">
+          <span class="journey-hero-habit-icon" aria-hidden="true"><svg class="nea-icon"><use href="#nea-icon-cross"></use></svg></span>
+          <p><strong>The ideas you left behind, explained.</strong> Rejecting an idea is a design decision too &mdash; justify it like one.</p>
+        </div>
+      </aside>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="section section-primary journey-slide" id="rule" data-slide data-title="Intro &middot; The rule behind everything" aria-labelledby="rule-heading">
+      <div class="section-header">
+        <p class="section-kicker">The rule behind everything</p>
+        <h2 id="rule-heading" tabindex="-1">Nothing in your folder stands alone</h2>
+      </div>
+      <p class="journey-rule-statement">Every page should answer a question raised by the page <span class="nea-highlight nea-highlight--evidence">before it</span>.</p>
+      <ol class="journey-rule-chain" aria-label="How one real folder page raises the question the next page answers">
+        <li class="journey-chain-page">
+          <button class="image-card journey-chain-thumb" type="button" data-image="1-gcse-task-analysis.png" data-title="Task analysis mind map" data-kind="GCSE NEA folder page" data-caption="Task analysis mind map">
+            <img alt="" aria-hidden="true">
+            <span class="placeholder-content"><span>Image needed</span><small>assets/images/1-gcse-task-analysis.png</small></span>
+            <span class="journey-thumb-zoom" aria-hidden="true"><svg class="nea-icon"><use href="#nea-icon-search"></use></svg></span>
+            <span class="visually-hidden">Opens a larger view</span>
+          </button>
+          <span class="journey-chain-name">Task analysis</span>
+        </li>
+        <li class="journey-chain-link">
+          <span class="journey-chain-arrow" aria-hidden="true"><svg class="nea-icon"><use href="#nea-icon-question"></use></svg></span>
+          <span class="journey-chain-question"><span class="visually-hidden">which raises the question: </span>Who is this really for?</span>
+        </li>
+        <li class="journey-chain-page">
+          <button class="image-card journey-chain-thumb" type="button" data-image="2-gcse-consumer-research.png" data-title="Consumer questionnaire with answers and reasons" data-kind="GCSE NEA folder page" data-caption="Consumer questionnaire with answers and reasons">
+            <img alt="" aria-hidden="true">
+            <span class="placeholder-content"><span>Image needed</span><small>assets/images/2-gcse-consumer-research.png</small></span>
+            <span class="journey-thumb-zoom" aria-hidden="true"><svg class="nea-icon"><use href="#nea-icon-search"></use></svg></span>
+            <span class="visually-hidden">Opens a larger view</span>
+          </button>
+          <span class="journey-chain-name">Consumer research</span>
+        </li>
+        <li class="journey-chain-link">
+          <span class="journey-chain-arrow" aria-hidden="true"><svg class="nea-icon"><use href="#nea-icon-question"></use></svg></span>
+          <span class="journey-chain-question"><span class="visually-hidden">which raises the question: </span>What do their answers mean?</span>
+        </li>
+        <li class="journey-chain-page">
+          <button class="image-card journey-chain-thumb" type="button" data-image="3-gcse-consumer-insights.jpg" data-title="Consumer design insights" data-kind="GCSE NEA folder page" data-caption="Consumer design insights">
+            <img alt="" aria-hidden="true">
+            <span class="placeholder-content"><span>Image needed</span><small>assets/images/3-gcse-consumer-insights.jpg</small></span>
+            <span class="journey-thumb-zoom" aria-hidden="true"><svg class="nea-icon"><use href="#nea-icon-search"></use></svg></span>
+            <span class="visually-hidden">Opens a larger view</span>
+          </button>
+          <span class="journey-chain-name">Consumer insights</span>
+        </li>
+        <li class="journey-chain-link">
+          <span class="journey-chain-arrow" aria-hidden="true"><svg class="nea-icon"><use href="#nea-icon-question"></use></svg></span>
+          <span class="journey-chain-question"><span class="visually-hidden">which raises the question: </span>What must the design do?</span>
+        </li>
+        <li class="journey-chain-page">
+          <button class="image-card journey-chain-thumb" type="button" data-image="4-gcse-specification.png" data-title="Specification with justifications" data-kind="GCSE NEA folder page" data-caption="Specification with justifications">
+            <img alt="" aria-hidden="true">
+            <span class="placeholder-content"><span>Image needed</span><small>assets/images/4-gcse-specification.png</small></span>
+            <span class="journey-thumb-zoom" aria-hidden="true"><svg class="nea-icon"><use href="#nea-icon-search"></use></svg></span>
+            <span class="visually-hidden">Opens a larger view</span>
+          </button>
+          <span class="journey-chain-name">Specification</span>
+        </li>
+      </ol>
+      <div class="nea-contrast-flow nea-contrast-flow--even">
+        <article class="nea-comparison-card nea-contrast-card nea-lens nea-lens--problems">
+          <div class="nea-card-heading">
+            <svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-arrow-left"></use></svg>
+            <p class="section-kicker">If a page doesn&rsquo;t answer a question&hellip;</p>
+          </div>
+          <blockquote>&hellip;ask what came before it that should have raised one.</blockquote>
+        </article>
+        <article class="nea-comparison-card nea-contrast-card nea-lens nea-lens--opportunities">
+          <div class="nea-card-heading">
+            <svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-arrow-right"></use></svg>
+            <p class="section-kicker">If it doesn&rsquo;t lead anywhere&hellip;</p>
+          </div>
+          <blockquote>&hellip;ask what question it should now be raising for the next page.</blockquote>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-quiet journey-slide" id="big-picture" data-slide data-title="Intro &middot; The NEA at a glance" aria-labelledby="map-heading">
+      <div class="section-header">
+        <p class="section-kicker">The big picture</p>
+        <h2 id="map-heading" tabindex="-1">The NEA at a glance</h2>
+        <p>Eleven stages &mdash; but not eleven separate boxes. Each one feeds the next, and evaluation runs through all of them. <strong>Click a stage to jump to it.</strong></p>
+      </div>
+
+      <div class="journey-map">
+        <ol class="journey-map-row journey-map-row--thumbs">
+          <li class="nea-lens nea-lens--problems">
+            <a class="journey-map-node" href="#stage-task-analysis" data-node="task-analysis"><span class="journey-map-num">1</span><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-mindmap"></use></svg><span class="journey-map-name">Task Analysis</span></a>
+            <button class="image-card journey-map-thumb" type="button" data-image="1-gcse-task-analysis.png" data-title="Example page: task analysis mind map" data-kind="GCSE NEA folder page" data-caption="Example page: task analysis mind map">
+              <img alt="" aria-hidden="true">
+              <span class="placeholder-content"><span>Image needed</span><small>assets/images/1-gcse-task-analysis.png</small></span>
+              <span class="journey-thumb-zoom" aria-hidden="true"><svg class="nea-icon"><use href="#nea-icon-search"></use></svg></span>
+              <span class="visually-hidden">Opens a larger view</span>
+            </button>
+          </li>
+          <li class="nea-lens nea-lens--places">
+            <a class="journey-map-node" href="#stage-narrow" data-node="narrow"><span class="journey-map-num">2</span><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-search"></use></svg><span class="journey-map-name">Narrow the Focus</span></a>
+            <button class="image-card journey-map-thumb" type="button" data-image="2-gcse-task-analysis.png" data-title="Example page: context analysis narrowing down the focus" data-kind="GCSE NEA folder page" data-caption="Example page: context analysis narrowing down the focus">
+              <img alt="" aria-hidden="true">
+              <span class="placeholder-content"><span>Image needed</span><small>assets/images/2-gcse-task-analysis.png</small></span>
+              <span class="journey-thumb-zoom" aria-hidden="true"><svg class="nea-icon"><use href="#nea-icon-search"></use></svg></span>
+              <span class="visually-hidden">Opens a larger view</span>
+            </button>
+          </li>
+          <li class="nea-lens nea-lens--people">
+            <a class="journey-map-node" href="#stage-consumer" data-node="consumer"><span class="journey-map-num">3</span><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-user"></use></svg><span class="journey-map-name">Consumer Profile</span></a>
+            <button class="image-card journey-map-thumb" type="button" data-image="2-gcse-consumer-research.png" data-title="Example page: consumer questionnaire with answers and reasons" data-kind="GCSE NEA folder page" data-caption="Example page: consumer questionnaire with answers and reasons">
+              <img alt="" aria-hidden="true">
+              <span class="placeholder-content"><span>Image needed</span><small>assets/images/2-gcse-consumer-research.png</small></span>
+              <span class="journey-thumb-zoom" aria-hidden="true"><svg class="nea-icon"><use href="#nea-icon-search"></use></svg></span>
+              <span class="visually-hidden">Opens a larger view</span>
+            </button>
+          </li>
+          <li class="nea-lens nea-lens--products">
+            <a class="journey-map-node" href="#stage-products" data-node="products"><span class="journey-map-num">4</span><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-product"></use></svg><span class="journey-map-name">Existing Products</span></a>
+            <button class="image-card journey-map-thumb" type="button" data-image="existing-product-analysis-lighting.png" data-title="Example page: three lighting products analysed and judged against the design brief" data-kind="Exemplar layout, not a real pupil page" data-caption="Example page: three lighting products analysed and judged against the design brief">
+              <img alt="" aria-hidden="true">
+              <span class="placeholder-content"><span>Image needed</span><small>assets/images/existing-product-analysis-lighting.png</small></span>
+              <span class="journey-thumb-zoom" aria-hidden="true"><svg class="nea-icon"><use href="#nea-icon-search"></use></svg></span>
+              <span class="visually-hidden">Opens a larger view</span>
+            </button>
+          </li>
+          <li class="nea-lens nea-lens--evidence">
+            <a class="journey-map-node" href="#stage-spec" data-node="spec"><span class="journey-map-num">5</span><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-target"></use></svg><span class="journey-map-name">Design Brief &amp; Specification</span></a>
+            <button class="image-card journey-map-thumb" type="button" data-image="4-gcse-specification.png" data-title="Example page: specification with justifications" data-kind="GCSE NEA folder page" data-caption="Example page: specification with justifications">
+              <img alt="" aria-hidden="true">
+              <span class="placeholder-content"><span>Image needed</span><small>assets/images/4-gcse-specification.png</small></span>
+              <span class="journey-thumb-zoom" aria-hidden="true"><svg class="nea-icon"><use href="#nea-icon-search"></use></svg></span>
+              <span class="visually-hidden">Opens a larger view</span>
+            </button>
+          </li>
+        </ol>
+
+        <a class="journey-map-loop nea-lens nea-lens--loop" href="#stage-loop" data-node="loop">
+          <span class="journey-mini-loop" aria-hidden="true">
+            <svg class="journey-loop-ring" viewBox="0 0 100 100" focusable="false">
+              <circle cx="50" cy="50" r="38"></circle>
+              <g class="journey-loop-arrows">
+                <path transform="rotate(36 50 50)" d="M48.4 10 51 12l-2.6 2"></path>
+                <path transform="rotate(108 50 50)" d="M48.4 10 51 12l-2.6 2"></path>
+                <path transform="rotate(180 50 50)" d="M48.4 10 51 12l-2.6 2"></path>
+                <path transform="rotate(252 50 50)" d="M48.4 10 51 12l-2.6 2"></path>
+                <path transform="rotate(324 50 50)" d="M48.4 10 51 12l-2.6 2"></path>
+              </g>
+            </svg>
+            <span class="journey-mini-loop-centre"><svg class="nea-icon"><use href="#nea-icon-loop"></use></svg></span>
+            <span class="journey-mini-loop-node" style="--x: 50%; --y: 12%; --i: 0;">Idea</span>
+            <span class="journey-mini-loop-node" style="--x: 86.1%; --y: 38.3%; --i: 1;">Evaluate</span>
+            <span class="journey-mini-loop-node" style="--x: 72.3%; --y: 80.7%; --i: 2;">Question</span>
+            <span class="journey-mini-loop-node" style="--x: 27.7%; --y: 80.7%; --i: 3;">Research</span>
+            <span class="journey-mini-loop-node" style="--x: 13.9%; --y: 38.3%; --i: 4;">Develop</span>
+          </span>
+          <span class="journey-map-loop-copy">
+            <span class="journey-map-loop-kicker">Iterate throughout</span>
+            <span class="journey-map-loop-title">Idea &rarr; evaluate against spec &rarr; question &rarr; research &rarr; develop &rarr; next idea</span>
+            <span class="journey-map-loop-note">Not a stage you do once &mdash; this loop runs from your first idea to your last.</span>
+            <span class="journey-map-loop-cta">Explore the loop <svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-arrow-right"></use></svg></span>
+          </span>
+        </a>
+
+        <ol class="journey-map-row" start="6">
+          <li class="nea-lens nea-lens--people">
+            <a class="journey-map-node" href="#stage-client" data-node="client"><span class="journey-map-num">6</span><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-chat"></use></svg><span class="journey-map-name">Client Check-ins</span></a>
+          </li>
+          <li class="nea-lens nea-lens--products">
+            <a class="journey-map-node" href="#stage-drawings" data-node="drawings"><span class="journey-map-num">7</span><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-ruler"></use></svg><span class="journey-map-name">Final Drawings</span></a>
+          </li>
+          <li class="nea-lens nea-lens--places">
+            <a class="journey-map-node" href="#stage-manufacturing" data-node="manufacturing"><span class="journey-map-num">8</span><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-plan"></use></svg><span class="journey-map-name">Manufacturing Specification</span></a>
+          </li>
+          <li class="nea-lens nea-lens--opportunities">
+            <a class="journey-map-node" href="#step-make" data-node="make"><span class="journey-map-num">9</span><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-wrench"></use></svg><span class="journey-map-name">Make the Prototype</span></a>
+          </li>
+          <li class="nea-lens nea-lens--opportunities">
+            <a class="journey-map-node" href="#step-test" data-node="test"><span class="journey-map-num">10</span><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-user"></use></svg><span class="journey-map-name">Test With the Client</span></a>
+          </li>
+          <li class="nea-lens nea-lens--opportunities">
+            <a class="journey-map-node" href="#step-evaluate" data-node="evaluate"><span class="journey-map-num">11</span><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-check"></use></svg><span class="journey-map-name">Evaluate vs the Spec</span></a>
+          </li>
+        </ol>
+      </div>
+
+      <p class="nea-key-line">This loop runs mainly between the specification and the manufacturing spec &mdash; but a strong point from it can <span class="nea-highlight nea-highlight--loop">update your specification at any stage</span>.</p>
+    </section>
+
+    <section class="section journey-part journey-slide" id="part-1" data-slide data-title="Part 1 &middot; Understanding the Problem" aria-labelledby="part-1-heading">
+      <p class="journey-part-number" aria-hidden="true">01</p>
+      <div>
+        <p class="section-kicker">Part 1</p>
+        <h2 id="part-1-heading" tabindex="-1">Understanding the Problem</h2>
+        <p class="journey-part-sub">Task analysis &middot; narrowing down &middot; consumer profile &middot; existing products</p>
+      </div>
+    </section>
+
+    <section class="section journey-slide" id="stage-task-analysis" data-slide data-spy="task-analysis" data-title="Stage 1 &middot; Mind Map 1: Task Analysis" aria-labelledby="stage-1-heading">
+      <div class="section-header">
+        <p class="section-kicker">Stage 1</p>
+        <h2 id="stage-1-heading" tabindex="-1">Mind Map 1 &mdash; Task Analysis</h2>
+      </div>
+      <article class="nea-info-card journey-stage nea-lens nea-lens--problems">
+        <div class="journey-stage-grid">
+          <div class="journey-stage-block">
+            <h3 class="journey-label"><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-mindmap"></use></svg> What it contains</h3>
+            <p>Take the context AQA has given you and branch out &mdash; every problem, activity, user group and friction you can find inside it. <strong>Breadth first, judgement later.</strong></p>
+          </div>
+          <div class="journey-stage-block">
+            <h3 class="journey-label"><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-question"></use></svg> Why it&rsquo;s done</h3>
+            <p>Moderators specifically mark down folders that jump to one problem without showing a range was considered. This map is your evidence that you looked before you chose.</p>
+          </div>
+        </div>
+        <div class="journey-disclosure">
+          <button class="journey-toggle" type="button" aria-expanded="false" aria-controls="example-stage-1" data-disclosure>
+            <span>See the example</span>
+            <svg class="nea-icon journey-toggle-chevron" aria-hidden="true"><use href="#nea-icon-chevron"></use></svg>
+          </button>
+          <div class="journey-example" id="example-stage-1" hidden>
+            <div class="journey-example-grid">
+              <div>
+                <h4 class="journey-mini-heading">What a good branch looks like</h4>
+                <ul class="journey-ticks">
+                  <li>A named friction or problem &mdash; not a vague topic</li>
+                  <li>Who experiences it, and when</li>
+                  <li>Why it currently isn&rsquo;t solved well</li>
+                  <li>A rough sense of how big / worth solving it is</li>
+                </ul>
+              </div>
+              <div class="journey-flip" data-flip>
+                <div class="journey-flip-head">
+                  <h4 class="journey-mini-heading">Weak or strong branch?</h4>
+                  <button class="journey-switch" type="button" role="switch" aria-checked="false" data-flip-switch>
+                    <span class="journey-switch-text">Show the strong version</span>
+                    <span class="journey-switch-track" aria-hidden="true"><span>Weak</span><span>Strong</span></span>
+                  </button>
+                </div>
+                <div class="journey-flip-stage" aria-live="polite">
+                  <div class="journey-face nea-lens nea-lens--problems" data-flip-front>
+                    <p class="journey-face-label"><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-cross"></use></svg> Weak version</p>
+                    <blockquote>&ldquo;I could design packaging, or a toy, or a chair.&rdquo;</blockquote>
+                  </div>
+                  <div class="journey-face nea-lens nea-lens--opportunities" data-flip-back hidden>
+                    <p class="journey-face-label"><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-check"></use></svg> Strong version</p>
+                    <blockquote>&ldquo;Parents packing school lunches struggle to keep hot and cold food separate and safe &mdash; existing boxes don&rsquo;t manage temperature at all.&rdquo;</blockquote>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <div class="journey-evidence">
+        <p class="journey-evidence-label"><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-evidence"></use></svg> From a real GCSE folder</p>
+        <ul class="journey-evidence-list">
+          <li class="journey-evidence-item">
+            <button class="image-card journey-thumb" type="button" data-image="1-gcse-task-analysis.png" data-title="Task analysis mind map for a chair, with the design brief and consumer" data-kind="GCSE NEA folder page" data-caption="Task analysis.">
+              <img alt="" aria-hidden="true">
+              <span class="placeholder-content">
+                <span>Image needed</span>
+                <strong>Task analysis mind map for a chair, with the design brief and consumer</strong>
+                <small>assets/images/1-gcse-task-analysis.png</small>
+              </span>
+              <span class="journey-thumb-zoom" aria-hidden="true"><svg class="nea-icon"><use href="#nea-icon-search"></use></svg></span>
+              <span class="visually-hidden">Opens a larger view</span>
+            </button>
+            <p class="journey-evidence-caption"><strong>Task analysis.</strong> One word &mdash; chair &mdash; branched into needs, who, materials and lifestyles before any brief was written.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section-quiet journey-slide" id="stage-narrow" data-slide data-spy="narrow" data-title="Stage 2 &middot; Mind Map 2: Narrowing Down" aria-labelledby="stage-2-heading">
+      <div class="section-header">
+        <p class="section-kicker">Stage 2</p>
+        <h2 id="stage-2-heading" tabindex="-1">Mind Map 2 &mdash; Narrowing Down</h2>
+      </div>
+      <article class="nea-info-card journey-stage nea-lens nea-lens--places">
+        <div class="journey-stage-grid">
+          <div class="journey-stage-block">
+            <h3 class="journey-label"><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-mindmap"></use></svg> What it contains</h3>
+            <p>Take the one friction, activity or problem you&rsquo;ve selected from Mind Map 1 and branch again &mdash; this time on that single idea. What causes it? Who does it affect most? What would &lsquo;solved&rsquo; even look like?</p>
+          </div>
+          <div class="journey-stage-block">
+            <h3 class="journey-label"><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-question"></use></svg> Why it&rsquo;s done</h3>
+            <p>This is where a vague topic becomes a real design problem. It&rsquo;s also your justification for the choice &mdash; the moderator should see why this friction, not the others, deserved a full NEA.</p>
+          </div>
+        </div>
+        <div class="journey-disclosure">
+          <button class="journey-toggle" type="button" aria-expanded="false" aria-controls="example-stage-2" data-disclosure>
+            <span>See the example</span>
+            <svg class="nea-icon journey-toggle-chevron" aria-hidden="true"><use href="#nea-icon-chevron"></use></svg>
+          </button>
+          <div class="journey-example" id="example-stage-2" hidden>
+            <h4 class="journey-mini-heading">From Mind Map 1 &rarr; Mind Map 2</h4>
+            <div class="journey-mapflow">
+              <div class="journey-mapflow-map">
+                <p class="journey-face-label">Mind Map 1: &ldquo;Lunch packaging&rdquo;</p>
+                <ul class="nea-chip-list">
+                  <li class="nea-chip journey-chip-picked">Heat loss</li>
+                  <li class="nea-chip">Mess</li>
+                  <li class="nea-chip">Portion control</li>
+                  <li class="nea-chip">Bag weight</li>
+                  <li class="nea-chip">Bin waste</li>
+                  <li class="nea-chip">Allergy labelling&hellip;</li>
+                </ul>
+              </div>
+              <span class="journey-mapflow-arrow" aria-hidden="true"><svg class="nea-icon"><use href="#nea-icon-arrow-right"></use></svg></span>
+              <div class="journey-mapflow-map">
+                <p class="journey-face-label">Mind Map 2: &ldquo;Heat loss&rdquo;</p>
+                <ul class="nea-chip-list">
+                  <li class="nea-chip">Insulation methods</li>
+                  <li class="nea-chip">How long food stays warm</li>
+                  <li class="nea-chip">What parents currently do about it</li>
+                  <li class="nea-chip">What a fix would need to fit into a school bag</li>
+                </ul>
+              </div>
+            </div>
+            <p class="nea-key-line">One line here should be a direct answer to a question the first map raised.</p>
+          </div>
+        </div>
+      </article>
+
+      <div class="journey-evidence">
+        <p class="journey-evidence-label"><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-evidence"></use></svg> From a real GCSE folder</p>
+        <ul class="journey-evidence-list">
+          <li class="journey-evidence-item">
+            <button class="image-card journey-thumb" type="button" data-image="2-gcse-task-analysis.png" data-title="Context analysis mind map of the contemporary home" data-kind="GCSE NEA folder page" data-caption="Narrowing down.">
+              <img alt="" aria-hidden="true">
+              <span class="placeholder-content">
+                <span>Image needed</span>
+                <strong>Context analysis mind map of the contemporary home</strong>
+                <small>assets/images/2-gcse-task-analysis.png</small>
+              </span>
+              <span class="journey-thumb-zoom" aria-hidden="true"><svg class="nea-icon"><use href="#nea-icon-search"></use></svg></span>
+              <span class="visually-hidden">Opens a larger view</span>
+            </button>
+            <p class="journey-evidence-caption"><strong>Narrowing down.</strong> Every room, product, design movement and target market is given a reason to keep it or drop it. (A different project.)</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section journey-slide" id="your-choice" data-slide data-title="Part 1 &middot; Your choice" aria-labelledby="choice-heading">
+      <div class="section-header">
+        <p class="section-kicker">Your choice</p>
+        <h2 id="choice-heading" tabindex="-1">From here, two honest starting points</h2>
+        <p>Once your focus is set, how you begin is up to you &mdash; play to how you think best. <strong>Both paths are equally valid; both must show evidence.</strong></p>
+      </div>
+      <div class="nea-contrast-flow nea-contrast-flow--even journey-paths">
+        <article class="nea-info-card nea-lens nea-lens--products">
+          <div class="nea-card-heading">
+            <svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-pencil"></use></svg>
+            <h3>Sketch it out first</h3>
+          </div>
+          <p>A mind-dump of first-thought ideas &mdash; rough, quick, unfiltered. Good if ideas come easily to you and you think best with a pencil in hand.</p>
+          <p class="journey-path-note">Still needs labelling and dating &mdash; these count as your first concept sketches.</p>
+        </article>
+        <article class="nea-info-card nea-lens nea-lens--evidence">
+          <div class="nea-card-heading">
+            <svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-search"></use></svg>
+            <h3>Research it first</h3>
+          </div>
+          <p>Go deeper into the friction before sketching anything &mdash; consumer profile, existing products. Good if you want a firmer footing before committing ideas to paper.</p>
+          <p class="journey-path-note">Sketches will follow research rather than lead it &mdash; both are fine.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-quiet journey-slide" id="stage-consumer" data-slide data-spy="consumer" data-title="Stage 3 &middot; Consumer Profile" aria-labelledby="stage-3-heading">
+      <div class="section-header">
+        <p class="section-kicker">Stage 3</p>
+        <h2 id="stage-3-heading" tabindex="-1">Consumer Profile &mdash; values, not answers</h2>
+      </div>
+      <div class="nea-stack">
+        <article class="nea-info-card journey-stage nea-lens nea-lens--people">
+          <div class="journey-stage-grid">
+            <div class="journey-stage-block">
+              <h3 class="journey-label"><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-user"></use></svg> What it contains</h3>
+              <p>A real client or user, questioned about the friction you&rsquo;ve chosen &mdash; their habits, priorities, constraints and preferences around it.</p>
+            </div>
+            <div class="journey-stage-block">
+              <h3 class="journey-label"><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-question"></use></svg> Why it&rsquo;s done</h3>
+              <p>It grounds the friction in a real person before you design anything, and it hands you the language you&rsquo;ll justify every later specification point with.</p>
+            </div>
+          </div>
+          <div class="journey-warning nea-lens nea-lens--problems">
+            <p class="journey-face-label"><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-problem"></use></svg> The trap to avoid</p>
+            <p>Don&rsquo;t ask &ldquo;what&rsquo;s your favourite colour?&rdquo; &mdash; that hands the pupil an answer and quietly closes down creativity. Ask what they value and why instead.</p>
+          </div>
+          <div class="journey-disclosure">
+            <button class="journey-toggle" type="button" aria-expanded="false" aria-controls="example-stage-3" data-disclosure>
+              <span>See the example</span>
+              <svg class="nea-icon journey-toggle-chevron" aria-hidden="true"><use href="#nea-icon-chevron"></use></svg>
+            </button>
+            <div class="journey-example" id="example-stage-3" hidden>
+              <div class="journey-flip" data-flip>
+                <div class="journey-flip-head">
+                  <h4 class="journey-mini-heading">Answers vs. values &amp; preferences</h4>
+                  <button class="journey-switch" type="button" role="switch" aria-checked="false" data-flip-switch>
+                    <span class="journey-switch-text">Rewrite as values questions</span>
+                    <span class="journey-switch-track" aria-hidden="true"><span>Answers</span><span>Values</span></span>
+                  </button>
+                </div>
+                <ul class="journey-question-flips" aria-live="polite">
+                  <li>
+                    <span class="journey-face journey-face--inline nea-lens nea-lens--problems" data-flip-front>&ldquo;What colour do you want?&rdquo;</span>
+                    <span class="journey-face journey-face--inline nea-lens nea-lens--opportunities" data-flip-back hidden>&ldquo;Do you prefer things that blend in or stand out?&rdquo;</span>
+                  </li>
+                  <li>
+                    <span class="journey-face journey-face--inline nea-lens nea-lens--problems" data-flip-front>&ldquo;Do you want it made of wood?&rdquo;</span>
+                    <span class="journey-face journey-face--inline nea-lens nea-lens--opportunities" data-flip-back hidden>&ldquo;Does it matter to you where materials come from?&rdquo;</span>
+                  </li>
+                  <li>
+                    <span class="journey-face journey-face--inline nea-lens nea-lens--problems" data-flip-front>&ldquo;What size should it be?&rdquo;</span>
+                    <span class="journey-face journey-face--inline nea-lens nea-lens--opportunities" data-flip-back hidden>&ldquo;How much space are you working with day to day?&rdquo;</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="nea-info-card journey-flip-card nea-lens nea-lens--people">
+          <div class="journey-flip" data-flip>
+            <div class="journey-flip-head">
+              <div>
+                <p class="section-kicker">Stage 3, continued</p>
+                <h3>Who they are is weak. How they live is useful.</h3>
+              </div>
+              <button class="journey-switch" type="button" role="switch" aria-checked="false" data-flip-switch>
+                <span class="journey-switch-text">Show the strong version</span>
+                <span class="journey-switch-track" aria-hidden="true"><span>Weak</span><span>Strong</span></span>
+              </button>
+            </div>
+            <div class="journey-flip-stage" aria-live="polite">
+              <div class="journey-face nea-lens nea-lens--problems" data-flip-front>
+                <p class="journey-face-label"><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-cross"></use></svg> Weak</p>
+                <blockquote>&ldquo;My consumer is a teenage girl who supports LFC.&rdquo;</blockquote>
+                <p>A label, not a person. It tells you nothing about what to design.</p>
+              </div>
+              <div class="journey-face nea-lens nea-lens--opportunities" data-flip-back hidden>
+                <p class="journey-face-label"><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-check"></use></svg> Strong</p>
+                <blockquote>&ldquo;A 14-year-old student with a small bedroom, limited floor space, and a lot of school equipment to store.&rdquo;</blockquote>
+                <p>Tells you what to design for: <span class="nea-highlight nea-highlight--opportunities">compact, lightweight, easy to tidy away</span>.</p>
+              </div>
+            </div>
+          </div>
+          <button class="journey-copy" type="button" data-copy="My user is someone who ______, lives in ______, and needs ______ because ______.">
+            <span class="journey-copy-label"><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-copy"></use></svg> Sentence starter worth giving pupils <span class="journey-copy-status" data-copy-status>Click to copy</span></span>
+            <span class="journey-copy-text">&ldquo;My user is someone who <span class="nea-token nea-blank"><span class="visually-hidden">blank</span></span>, lives in <span class="nea-token nea-blank"><span class="visually-hidden">blank</span></span>, and needs <span class="nea-token nea-blank"><span class="visually-hidden">blank</span></span> because <span class="nea-token nea-blank"><span class="visually-hidden">blank</span></span>.&rdquo;</span>
+          </button>
+        </article>
+      </div>
+
+      <div class="journey-evidence">
+        <p class="journey-evidence-label"><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-evidence"></use></svg> From a real GCSE folder</p>
+        <ul class="journey-evidence-list">
+          <li class="journey-evidence-item">
+            <button class="image-card journey-thumb" type="button" data-image="2-gcse-consumer-research.png" data-title="Consumer questionnaire using poles-apart image scales, with answers and reasons" data-kind="GCSE NEA folder page" data-caption="Values, not answers.">
+              <img alt="" aria-hidden="true">
+              <span class="placeholder-content">
+                <span>Image needed</span>
+                <strong>Consumer questionnaire using poles-apart image scales, with answers and reasons</strong>
+                <small>assets/images/2-gcse-consumer-research.png</small>
+              </span>
+              <span class="journey-thumb-zoom" aria-hidden="true"><svg class="nea-icon"><use href="#nea-icon-search"></use></svg></span>
+              <span class="visually-hidden">Opens a larger view</span>
+            </button>
+            <p class="journey-evidence-caption"><strong>Values, not answers.</strong> Twelve poles-apart scales, then each answer recorded with the consumer&rsquo;s reason.</p>
+          </li>
+          <li class="journey-evidence-item">
+            <button class="image-card journey-thumb" type="button" data-image="3-gcse-consumer-insights.jpg" data-title="Consumer design insights page" data-kind="GCSE NEA folder page" data-caption="From answers to insights.">
+              <img alt="" aria-hidden="true">
+              <span class="placeholder-content">
+                <span>Image needed</span>
+                <strong>Consumer design insights page</strong>
+                <small>assets/images/3-gcse-consumer-insights.jpg</small>
+              </span>
+              <span class="journey-thumb-zoom" aria-hidden="true"><svg class="nea-icon"><use href="#nea-icon-search"></use></svg></span>
+              <span class="visually-hidden">Opens a larger view</span>
+            </button>
+            <p class="journey-evidence-caption"><strong>From answers to insights.</strong> Each response is turned into what it means for the chair &mdash; size, motion, materials, storage.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section journey-slide" id="stage-products" data-slide data-spy="products" data-title="Stage 4 &middot; Existing Products" aria-labelledby="stage-4-heading">
+      <div class="section-header">
+        <p class="section-kicker">Stage 4</p>
+        <h2 id="stage-4-heading" tabindex="-1">Existing Products &mdash; finding the gaps</h2>
+      </div>
+      <article class="nea-info-card journey-stage nea-lens nea-lens--products">
+        <div class="journey-stage-grid">
+          <div class="journey-stage-block">
+            <h3 class="journey-label"><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-product"></use></svg> What it contains</h3>
+            <p>Products that already try to solve this friction &mdash; tested, used, or taken apart, not just looked at.</p>
+          </div>
+          <div class="journey-stage-block">
+            <h3 class="journey-label"><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-question"></use></svg> The one question that matters</h3>
+            <p>Not &ldquo;what does this product do?&rdquo; but <strong>&ldquo;where does it fall short of my consumer&rsquo;s needs &mdash; and is that gap worth designing for?&rdquo;</strong></p>
+          </div>
+        </div>
+        <div class="journey-disclosure">
+          <button class="journey-toggle" type="button" aria-expanded="false" aria-controls="example-stage-4" data-disclosure>
+            <span>See how it feeds your specification</span>
+            <svg class="nea-icon journey-toggle-chevron" aria-hidden="true"><use href="#nea-icon-chevron"></use></svg>
+          </button>
+          <div class="journey-example" id="example-stage-4" hidden>
+            <h4 class="journey-mini-heading">Feeds directly into your specification</h4>
+            <ul class="journey-ticks">
+              <li>What this product gets right &mdash; keep that</li>
+              <li>What it misses for your specific consumer</li>
+              <li>Why that gap still exists (cost? complexity? nobody asked?)</li>
+            </ul>
+            <p class="nea-key-line">Each gap you find here should turn up later as a specification point, with this analysis cited as the reason it&rsquo;s there.</p>
+          </div>
+        </div>
+      </article>
+
+      <div class="journey-evidence">
+        <p class="journey-evidence-label"><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-evidence"></use></svg> Example page format</p>
+        <ul class="journey-evidence-list">
+          <li class="journey-evidence-item">
+            <button class="image-card journey-thumb" type="button" data-image="existing-product-analysis-lighting.png" data-title="Three lighting products, each analysed and judged against the design brief, with a combined analysis underneath" data-kind="Exemplar layout, not a real pupil page" data-caption="Judge each product on its own, then pull them together.">
+              <img alt="" aria-hidden="true">
+              <span class="placeholder-content">
+                <span>Image needed</span>
+                <strong>Three lighting products, each analysed and judged against the design brief, with a combined analysis underneath</strong>
+                <small>assets/images/existing-product-analysis-lighting.png</small>
+              </span>
+              <span class="journey-thumb-zoom" aria-hidden="true"><svg class="nea-icon"><use href="#nea-icon-search"></use></svg></span>
+              <span class="visually-hidden">Opens a larger view</span>
+            </button>
+            <p class="journey-evidence-caption"><strong>Judge each product on its own, then pull them together.</strong> Each product gets its own evaluation &mdash; what it gets right, what it misses &mdash; before a final paragraph says what the gap across all three actually is, and what that means for the specification. Replace the placeholder images with photos of the real products you&rsquo;ve found.</p>
+          </li>
+        </ul>
+      </div>
+
+      <p class="nea-warning">If your product analysis doesn&rsquo;t change or confirm anything in your thinking, it&rsquo;s an activity you did for its own sake &mdash; and it won&rsquo;t be credited.</p>
+    </section>
+
+    <section class="section section-quiet journey-part journey-slide" id="part-2" data-slide data-title="Part 2 &middot; Setting the Target" aria-labelledby="part-2-heading">
+      <p class="journey-part-number" aria-hidden="true">02</p>
+      <div>
+        <p class="section-kicker">Part 2</p>
+        <h2 id="part-2-heading" tabindex="-1">Setting the Target</h2>
+        <p class="journey-part-sub">The design brief and specification</p>
+      </div>
+    </section>
+
+    <section class="section journey-slide" id="stage-spec" data-slide data-title="Stage 5 &middot; Design Brief &amp; Specification" aria-labelledby="stage-5-heading">
+      <div class="section-header">
+        <p class="section-kicker">Stage 5</p>
+        <h2 id="stage-5-heading" tabindex="-1">What makes a strong specification point</h2>
+      </div>
+      <article class="nea-info-card journey-stage nea-lens nea-lens--evidence">
+        <div class="journey-criteria">
+          <div class="journey-criterion">
+            <h3 class="journey-label"><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-ruler"></use></svg> Measurable</h3>
+            <p>A number, a material, a limit &mdash; something you can actually test against later, not a feeling.</p>
+          </div>
+          <div class="journey-criterion">
+            <h3 class="journey-label"><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-question"></use></svg> Justified</h3>
+            <p>You can say exactly why this point exists and what it&rsquo;s protecting.</p>
+          </div>
+          <div class="journey-criterion">
+            <h3 class="journey-label"><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-user"></use></svg> Traceable to the profile</h3>
+            <p>Linked to something your consumer actually said they need or value.</p>
+          </div>
+          <div class="journey-criterion">
+            <h3 class="journey-label"><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-product"></use></svg> Traceable to research</h3>
+            <p>Linked to a gap you found in existing products, not invented from nowhere.</p>
+          </div>
+        </div>
+        <div class="journey-disclosure">
+          <button class="journey-toggle" type="button" aria-expanded="false" aria-controls="example-stage-5" data-disclosure>
+            <span>See the example: every point needs a visible trail back</span>
+            <svg class="nea-icon journey-toggle-chevron" aria-hidden="true"><use href="#nea-icon-chevron"></use></svg>
+          </button>
+          <div class="journey-example" id="example-stage-5" hidden>
+            <div class="journey-flip" data-flip>
+              <div class="journey-flip-head">
+                <h4 class="journey-mini-heading">Every point needs a visible trail back</h4>
+                <button class="journey-switch" type="button" role="switch" aria-checked="false" data-flip-switch>
+                  <span class="journey-switch-text">Show the strong version</span>
+                  <span class="journey-switch-track" aria-hidden="true"><span>Weak</span><span>Strong</span></span>
+                </button>
+              </div>
+              <div class="journey-flip-stage" aria-live="polite">
+                <div class="journey-face nea-lens nea-lens--problems" data-flip-front>
+                  <p class="journey-face-label"><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-cross"></use></svg> Weak &mdash; no traceable origin</p>
+                  <blockquote>&ldquo;The product should be lightweight.&rdquo;</blockquote>
+                </div>
+                <div class="journey-face nea-lens nea-lens--opportunities" data-flip-back hidden>
+                  <p class="journey-face-label"><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-check"></use></svg> Strong &mdash; cause named, evidence named</p>
+                  <blockquote>&ldquo;The prototype must weigh <span class="nea-highlight nea-highlight--evidence">under 600g</span>, so a 14-year-old can carry it in a school bag alongside books all day.&rdquo;</blockquote>
+                  <dl class="journey-trail">
+                    <div>
+                      <dt><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-user"></use></svg> Consumer profile</dt>
+                      <dd>Carries a full bag between lessons, already complains about weight</dd>
+                    </div>
+                    <div>
+                      <dt><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-product"></use></svg> Existing products</dt>
+                      <dd>The two competitor products tested both weighed over 900g</dd>
+                    </div>
+                  </dl>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <div class="journey-evidence">
+        <p class="journey-evidence-label"><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-evidence"></use></svg> From a real GCSE folder</p>
+        <ul class="journey-evidence-list">
+          <li class="journey-evidence-item">
+            <button class="image-card journey-thumb" type="button" data-image="1-gcse-task-analysis.png" data-title="Design brief and consumer summary, written beneath the task analysis" data-kind="GCSE NEA folder page" data-caption="The design brief.">
+              <img alt="" aria-hidden="true">
+              <span class="placeholder-content">
+                <span>Image needed</span>
+                <strong>Design brief and consumer summary, written beneath the task analysis</strong>
+                <small>assets/images/1-gcse-task-analysis.png</small>
+              </span>
+              <span class="journey-thumb-zoom" aria-hidden="true"><svg class="nea-icon"><use href="#nea-icon-search"></use></svg></span>
+              <span class="visually-hidden">Opens a larger view</span>
+            </button>
+            <p class="journey-evidence-caption"><strong>The design brief.</strong> Look at the bottom of the page: who the chair is for, where it will be used and what it needs to do &mdash; the brief every specification point has to serve.</p>
+          </li>
+          <li class="journey-evidence-item">
+            <button class="image-card journey-thumb" type="button" data-image="4-gcse-specification.png" data-title="Specification table with measurable criteria and a justification for each" data-kind="GCSE NEA folder page" data-caption="A visible trail back.">
+              <img alt="" aria-hidden="true">
+              <span class="placeholder-content">
+                <span>Image needed</span>
+                <strong>Specification table with measurable criteria and a justification for each</strong>
+                <small>assets/images/4-gcse-specification.png</small>
+              </span>
+              <span class="journey-thumb-zoom" aria-hidden="true"><svg class="nea-icon"><use href="#nea-icon-search"></use></svg></span>
+              <span class="visually-hidden">Opens a larger view</span>
+            </button>
+            <p class="journey-evidence-caption"><strong>A visible trail back.</strong> Measurable criteria (800 &times; 800mm footprint, 40mm padding, 100kg load), each justified by the consumer research.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section-quiet journey-slide" id="spec-alive" data-slide data-spy="spec" data-title="Stage 5 &middot; The specification stays alive" aria-labelledby="spec-alive-heading">
+      <div class="section-header">
+        <p class="section-kicker">Stage 5, continued</p>
+        <h2 id="spec-alive-heading" tabindex="-1">The specification stays alive, not fixed</h2>
+      </div>
+      <article class="nea-info-card journey-stage nea-lens nea-lens--evidence">
+        <div class="journey-stage-grid">
+          <div class="journey-stage-block">
+            <h3 class="journey-label"><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-loop"></use></svg> It isn&rsquo;t a one-time gate</h3>
+            <p>The NEA isn&rsquo;t a straight line. If research or testing later on reveals something the spec should cover, add it &mdash; that&rsquo;s the process working, not going backwards.</p>
+          </div>
+          <div class="journey-stage-block">
+            <h3 class="journey-label"><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-pencil"></use></svg> Show the update, don&rsquo;t hide it</h3>
+            <p>Use a dated note or a different text colour when a point is added or changed. It&rsquo;s evidence of you responding to evidence &mdash; exactly what examiners want to see.</p>
+          </div>
+        </div>
+        <div class="journey-disclosure">
+          <button class="journey-toggle" type="button" aria-expanded="false" aria-controls="example-spec-alive" data-disclosure>
+            <span>See an example of a live spec entry</span>
+            <svg class="nea-icon journey-toggle-chevron" aria-hidden="true"><use href="#nea-icon-chevron"></use></svg>
+          </button>
+          <div class="journey-example" id="example-spec-alive" hidden>
+            <h4 class="journey-mini-heading">Simple methods that work well</h4>
+            <div class="journey-tabs journey-tabs--compact">
+              <div class="journey-tablist" role="tablist" aria-label="Ways to show a specification amendment">
+                <button class="journey-tab" type="button" role="tab" id="tab-amend-colour" aria-controls="panel-amend-colour" aria-selected="true">A different text colour for each amendment</button>
+                <button class="journey-tab" type="button" role="tab" id="tab-amend-column" aria-controls="panel-amend-column" aria-selected="false" tabindex="-1">A dated &ldquo;amendment&rdquo; column next to the spec</button>
+              </div>
+              <div class="journey-tabpanel" role="tabpanel" id="panel-amend-colour" aria-labelledby="tab-amend-colour" tabindex="0">
+                <ol class="journey-spec-list" start="8">
+                  <li class="journey-spec-amended">
+                    <strong>Joints must withstand repeated flexing without failure.</strong>
+                    <span class="journey-spec-note">Added 14 Nov &mdash; after testing showed my first joint cracked under load.</span>
+                  </li>
+                </ol>
+              </div>
+              <div class="journey-tabpanel" role="tabpanel" id="panel-amend-column" aria-labelledby="tab-amend-column" tabindex="0" hidden>
+                <div class="journey-table-wrap">
+                  <table class="journey-table">
+                    <thead>
+                      <tr><th scope="col">No.</th><th scope="col">Specification point</th><th scope="col">Amendment</th></tr>
+                    </thead>
+                    <tbody>
+                      <tr><td>8</td><td>Joints must withstand repeated flexing without failure.</td><td class="journey-spec-note">Added 14 Nov &mdash; after testing showed my first joint cracked under load.</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="section journey-part journey-part--loop journey-slide" id="part-3" data-slide data-spy="loop" data-title="Part 3 &middot; The Iterative Loop" aria-labelledby="part-3-heading">
+      <p class="journey-part-number" aria-hidden="true">03</p>
+      <div>
+        <p class="section-kicker">Part 3 &middot; The heart of the NEA</p>
+        <h2 id="part-3-heading" tabindex="-1">The Iterative Loop</h2>
+        <p class="journey-part-sub">Idea &rarr; evaluate &rarr; question &rarr; research &rarr; develop &rarr; next idea</p>
+      </div>
+    </section>
+
+    <section class="section section-quiet journey-slide journey-loop-section" id="stage-loop" data-slide data-title="The loop &middot; From your first idea to your last" aria-labelledby="loop-heading">
+      <div class="section-header">
+        <p class="section-kicker">Runs throughout</p>
+        <h2 id="loop-heading" tabindex="-1">This loop runs from your first idea to your last</h2>
+        <p>Click each step &mdash; or use the arrow keys &mdash; to go round the loop.</p>
+      </div>
+
+      <div class="journey-loop nea-lens nea-lens--loop" data-loop data-active="0">
+        <div class="journey-loop-diagram">
+          <svg class="journey-loop-ring" viewBox="0 0 100 100" aria-hidden="true" focusable="false">
+            <circle cx="50" cy="50" r="38"></circle>
+            <g class="journey-loop-arrows">
+              <path transform="rotate(36 50 50)" d="M48.4 10 51 12l-2.6 2"></path>
+              <path transform="rotate(108 50 50)" d="M48.4 10 51 12l-2.6 2"></path>
+              <path transform="rotate(180 50 50)" d="M48.4 10 51 12l-2.6 2"></path>
+              <path transform="rotate(252 50 50)" d="M48.4 10 51 12l-2.6 2"></path>
+              <path transform="rotate(324 50 50)" d="M48.4 10 51 12l-2.6 2"></path>
+            </g>
+          </svg>
+          <p class="journey-loop-centre" aria-hidden="true">
+            <svg class="nea-icon"><use href="#nea-icon-loop"></use></svg>
+            <span>Round again, until the design is resolved</span>
+          </p>
+          <div class="journey-loop-nodes" role="tablist" aria-label="Steps in the iterative loop">
+            <button class="journey-loop-node" type="button" role="tab" id="loop-tab-1" aria-controls="loop-panel-1" aria-selected="true" style="--x: 50%; --y: 12%;"><span class="journey-loop-num">1</span><span>Idea</span></button>
+            <button class="journey-loop-node" type="button" role="tab" id="loop-tab-2" aria-controls="loop-panel-2" aria-selected="false" tabindex="-1" style="--x: 86.1%; --y: 38.3%;"><span class="journey-loop-num">2</span><span>Evaluate against spec</span></button>
+            <button class="journey-loop-node" type="button" role="tab" id="loop-tab-3" aria-controls="loop-panel-3" aria-selected="false" tabindex="-1" style="--x: 72.3%; --y: 80.7%;"><span class="journey-loop-num">3</span><span>Question: &ldquo;How can I&hellip;?&rdquo;</span></button>
+            <button class="journey-loop-node" type="button" role="tab" id="loop-tab-4" aria-controls="loop-panel-4" aria-selected="false" tabindex="-1" style="--x: 27.7%; --y: 80.7%;"><span class="journey-loop-num">4</span><span>Research</span></button>
+            <button class="journey-loop-node" type="button" role="tab" id="loop-tab-5" aria-controls="loop-panel-5" aria-selected="false" tabindex="-1" style="--x: 13.9%; --y: 38.3%;"><span class="journey-loop-num">5</span><span>Develop / next idea</span></button>
+          </div>
+        </div>
+
+        <div class="journey-loop-panels">
+          <div class="journey-loop-panel" role="tabpanel" id="loop-panel-1" aria-labelledby="loop-tab-1" tabindex="0">
+            <p class="section-kicker">Step 1 of 5</p>
+            <h3>Idea</h3>
+            <p>An idea goes on the page &mdash; labelled and dated, so it counts as evidence. It might come from your first mind-dump of sketches, or from the last time round this loop.</p>
+            <button class="journey-btn journey-btn--primary" type="button" data-tab-go="loop-tab-2"><span>Next: evaluate against spec</span><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-arrow-right"></use></svg></button>
+          </div>
+          <div class="journey-loop-panel" role="tabpanel" id="loop-panel-2" aria-labelledby="loop-tab-2" tabindex="0" hidden>
+            <p class="section-kicker">Step 2 of 5</p>
+            <h3>Evaluate against spec</h3>
+            <p>Check the idea against your specification &mdash; point by point, not a general impression. Where it falls short, name the exact spec point it fails.</p>
+            <button class="journey-btn journey-btn--primary" type="button" data-tab-go="loop-tab-3"><span>Next: ask the question</span><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-arrow-right"></use></svg></button>
+          </div>
+          <div class="journey-loop-panel" role="tabpanel" id="loop-panel-3" aria-labelledby="loop-tab-3" tabindex="0" hidden>
+            <p class="section-kicker">Step 3 of 5</p>
+            <h3>Question: &ldquo;How can I&hellip;?&rdquo;</h3>
+            <p><strong>The question is the hinge.</strong> &ldquo;How do I join these?&rdquo; or &ldquo;How do I curve this?&rdquo; turns a stuck point into a targeted piece of research.</p>
+            <button class="journey-btn journey-btn--primary" type="button" data-tab-go="loop-tab-4"><span>Next: research</span><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-arrow-right"></use></svg></button>
+          </div>
+          <div class="journey-loop-panel" role="tabpanel" id="loop-panel-4" aria-labelledby="loop-tab-4" tabindex="0" hidden>
+            <p class="section-kicker">Step 4 of 5</p>
+            <h3>Research</h3>
+            <p>Research aimed exactly at the question the last idea raised &mdash; not a topic in general &mdash; which then gets tested.</p>
+            <button class="journey-btn journey-btn--primary" type="button" data-tab-go="loop-tab-5"><span>Next: develop</span><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-arrow-right"></use></svg></button>
+          </div>
+          <div class="journey-loop-panel" role="tabpanel" id="loop-panel-5" aria-labelledby="loop-tab-5" tabindex="0" hidden>
+            <p class="section-kicker">Step 5 of 5</p>
+            <h3>Develop / next idea</h3>
+            <p>What you tested gets sketched into the next idea &mdash; and a strong point from it can update your specification at any stage.</p>
+            <button class="journey-btn journey-btn--primary" type="button" data-tab-go="loop-tab-1"><span>Round again: the next idea</span><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-loop"></use></svg></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section journey-slide" id="loop-example" data-slide data-spy="loop" data-title="The loop &middot; A real example" aria-labelledby="loop-example-heading">
+      <div class="section-header">
+        <p class="section-kicker">The loop, continued</p>
+        <h2 id="loop-example-heading" tabindex="-1">The loop in action &mdash; a real example</h2>
+        <p>Before each reveal, ask: what should happen next?</p>
+      </div>
+
+      <div class="journey-stepper nea-lens nea-lens--loop" data-stepper>
+        <div class="journey-stepper-controls">
+          <button class="journey-btn" type="button" data-stepper-prev><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-arrow-left"></use></svg><span>Back</span></button>
+          <p class="journey-stepper-status" data-stepper-status>Step 1 of 5</p>
+          <button class="journey-btn journey-btn--primary" type="button" data-stepper-next><span>Next step</span><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-arrow-right"></use></svg></button>
+          <button class="journey-btn journey-btn--quiet" type="button" data-stepper-all>Show all</button>
+        </div>
+        <ol class="journey-steps journey-steps--five">
+          <li class="journey-step" data-step data-step-title="Idea 3">
+            <p class="journey-step-title"><span class="journey-step-num" aria-hidden="true"><svg class="nea-icon"><use href="#nea-icon-pencil"></use></svg></span> Idea 3</p>
+            <div class="journey-step-body" data-step-body><p>A curved backrest sketched for comfort and looks.</p></div>
+          </li>
+          <li class="journey-step" data-step data-step-title="Evaluate">
+            <p class="journey-step-title"><span class="journey-step-num" aria-hidden="true"><svg class="nea-icon"><use href="#nea-icon-target"></use></svg></span> Evaluate</p>
+            <div class="journey-step-body" data-step-body><p>Doesn&rsquo;t meet spec point 4 &mdash; must be made from solid timber.</p></div>
+          </li>
+          <li class="journey-step" data-step data-step-title="Question">
+            <p class="journey-step-title"><span class="journey-step-num" aria-hidden="true"><svg class="nea-icon"><use href="#nea-icon-question"></use></svg></span> Question</p>
+            <div class="journey-step-body" data-step-body><p class="journey-step-quote">&ldquo;How can I curve solid wood into this shape?&rdquo;</p></div>
+          </li>
+          <li class="journey-step" data-step data-step-title="Research">
+            <p class="journey-step-title"><span class="journey-step-num" aria-hidden="true"><svg class="nea-icon"><use href="#nea-icon-search"></use></svg></span> Research</p>
+            <div class="journey-step-body" data-step-body><p>Investigates steam bending and laminating; tests a small sample of each.</p></div>
+          </li>
+          <li class="journey-step" data-step data-step-title="Idea 4">
+            <p class="journey-step-title"><span class="journey-step-num" aria-hidden="true"><svg class="nea-icon"><use href="#nea-icon-loop"></use></svg></span> Idea 4</p>
+            <div class="journey-step-body" data-step-body><p>Redraws the backrest using the laminating method that held its shape best.</p></div>
+          </li>
+        </ol>
+      </div>
+
+      <div class="journey-evidence">
+        <p class="journey-evidence-label"><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-evidence"></use></svg> The same loop in a real GCSE folder</p>
+        <ul class="journey-evidence-list">
+          <li class="journey-evidence-item">
+            <button class="image-card journey-thumb" type="button" data-image="5-gcse-initial-ideas.png" data-title="First chair idea modelled in birch plywood, shown from six angles" data-kind="GCSE NEA folder page" data-caption="Idea.">
+              <img alt="" aria-hidden="true">
+              <span class="placeholder-content">
+                <span>Image needed</span>
+                <strong>First chair idea modelled in birch plywood, shown from six angles</strong>
+                <small>assets/images/5-gcse-initial-ideas.png</small>
+              </span>
+              <span class="journey-thumb-zoom" aria-hidden="true"><svg class="nea-icon"><use href="#nea-icon-search"></use></svg></span>
+              <span class="visually-hidden">Opens a larger view</span>
+            </button>
+            <p class="journey-evidence-caption"><strong>Idea.</strong> A first idea modelled in birch plywood and annotated against what the consumer wanted.</p>
+          </li>
+          <li class="journey-evidence-item">
+            <button class="image-card journey-thumb" type="button" data-image="7-gcse-development-1.png" data-title="CAD development of ideas, each ending in a How can I question" data-kind="GCSE NEA folder page" data-caption="Evaluate and question.">
+              <img alt="" aria-hidden="true">
+              <span class="placeholder-content">
+                <span>Image needed</span>
+                <strong>CAD development of ideas, each ending in a How can I question</strong>
+                <small>assets/images/7-gcse-development-1.png</small>
+              </span>
+              <span class="journey-thumb-zoom" aria-hidden="true"><svg class="nea-icon"><use href="#nea-icon-search"></use></svg></span>
+              <span class="visually-hidden">Opens a larger view</span>
+            </button>
+            <p class="journey-evidence-caption"><strong>Evaluate and question.</strong> Each CAD development is evaluated, and ends with a &ldquo;How can I&hellip;?&rdquo; question in purple.</p>
+          </li>
+          <li class="journey-evidence-item">
+            <button class="image-card journey-thumb" type="button" data-image="8-gcse-development-2.jpg" data-title="Research into laminating, rib slotting and layering plywood to make a curved structure" data-kind="GCSE NEA folder page" data-caption="Research, then develop.">
+              <img alt="" aria-hidden="true">
+              <span class="placeholder-content">
+                <span>Image needed</span>
+                <strong>Research into laminating, rib slotting and layering plywood to make a curved structure</strong>
+                <small>assets/images/8-gcse-development-2.jpg</small>
+              </span>
+              <span class="journey-thumb-zoom" aria-hidden="true"><svg class="nea-icon"><use href="#nea-icon-search"></use></svg></span>
+              <span class="visually-hidden">Opens a larger view</span>
+            </button>
+            <p class="journey-evidence-caption"><strong>Research, then develop.</strong> &ldquo;How will I make the curved structure?&rdquo; leads to laminating, rib slotting and layering &mdash; each drawn back onto the chair.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section-quiet journey-slide journey-emphasis" id="left-behind" data-slide data-spy="loop" data-title="The loop &middot; Explain what you left behind" aria-labelledby="left-behind-heading">
+      <div class="section-header">
+        <p class="section-kicker journey-kicker-alert">The habit most folders are missing</p>
+        <h2 id="left-behind-heading" tabindex="-1">Explain what you left behind, too</h2>
+        <p>Evaluating why an idea was developed is only half the judgement. The other half &mdash; <strong>just as heavily rewarded</strong> &mdash; is explaining why an idea wasn&rsquo;t.</p>
+      </div>
+
+      <div class="journey-tabs journey-tabs--ideas">
+        <div class="journey-tablist" role="tablist" aria-label="Evaluating your ideas">
+          <button class="journey-tab journey-tab--forward" type="button" role="tab" id="tab-forward" aria-controls="panel-forward" aria-selected="true">
+            <svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-arrow-right"></use></svg>
+            <span>Ideas taken forward</span>
+          </button>
+          <button class="journey-tab journey-tab--behind" type="button" role="tab" id="tab-behind" aria-controls="panel-behind" aria-selected="false" tabindex="-1">
+            <svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-cross"></use></svg>
+            <span>Ideas left behind, and why</span>
+            <span class="journey-tab-badge">Often missing</span>
+          </button>
+        </div>
+
+        <div class="journey-tabpanel nea-lens nea-lens--opportunities" role="tabpanel" id="panel-forward" aria-labelledby="tab-forward" tabindex="0">
+          <p class="journey-face-label"><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-check"></use></svg> Usually done well</p>
+          <blockquote class="journey-panel-quote">&ldquo;I chose idea 3 because it best matches spec points 2, 5 and 7&hellip;&rdquo;</blockquote>
+          <button class="journey-btn journey-btn--primary" type="button" data-tab-go="tab-behind"><span>Now the half most folders miss</span><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-arrow-right"></use></svg></button>
+        </div>
+
+        <div class="journey-tabpanel nea-lens nea-lens--problems" role="tabpanel" id="panel-behind" aria-labelledby="tab-behind" tabindex="0" hidden>
+          <p class="journey-face-label"><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-problem"></use></svg> Often missing, or just &ldquo;I didn&rsquo;t like this one&rdquo;</p>
+          <div class="journey-behind-compare">
+            <p class="journey-behind-weak"><span class="journey-behind-tag">Not enough</span> &ldquo;I didn&rsquo;t like this one.&rdquo;</p>
+            <blockquote class="journey-panel-quote">&ldquo;Idea 1 was rejected because it failed <span class="nea-highlight nea-highlight--evidence">spec point 4 (under 600g)</span> &mdash; the folded-steel frame alone weighed 800g, and reinforcing it would only add more.&rdquo;</blockquote>
+          </div>
+          <button class="journey-copy" type="button" data-copy="I rejected this idea because it failed to meet spec point ___ — specifically, ___.">
+            <span class="journey-copy-label"><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-copy"></use></svg> Sentence starter <span class="journey-copy-status" data-copy-status>Click to copy</span></span>
+            <span class="journey-copy-text">&ldquo;I rejected this idea because it failed to meet spec point <span class="nea-token nea-blank"><span class="visually-hidden">blank</span></span> &mdash; specifically, <span class="nea-token nea-blank"><span class="visually-hidden">blank</span></span>.&rdquo;</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="journey-evidence">
+        <p class="journey-evidence-label"><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-evidence"></use></svg> From a real GCSE folder</p>
+        <ul class="journey-evidence-list">
+          <li class="journey-evidence-item">
+            <button class="image-card journey-thumb" type="button" data-image="7-gcse-development-1.png" data-title="CAD development page showing ideas rejected with reasons" data-kind="GCSE NEA folder page" data-caption="Ideas left behind.">
+              <img alt="" aria-hidden="true">
+              <span class="placeholder-content">
+                <span>Image needed</span>
+                <strong>CAD development page showing ideas rejected with reasons</strong>
+                <small>assets/images/7-gcse-development-1.png</small>
+              </span>
+              <span class="journey-thumb-zoom" aria-hidden="true"><svg class="nea-icon"><use href="#nea-icon-search"></use></svg></span>
+              <span class="visually-hidden">Opens a larger view</span>
+            </button>
+            <p class="journey-evidence-caption"><strong>Ideas left behind.</strong> Look for the rejections: a seat that &ldquo;resembles a toilet seat&rdquo;, and a frame that &ldquo;steps too far away from the original design&rdquo;.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section journey-slide" id="stage-client" data-slide data-title="Stage 6 &middot; Client Check-ins" aria-labelledby="stage-client-heading">
+      <div class="section-header">
+        <p class="section-kicker">Stage 6</p>
+        <h2 id="stage-client-heading" tabindex="-1">Bring the client back in during development</h2>
+      </div>
+      <article class="nea-info-card journey-stage nea-lens nea-lens--people">
+        <div class="journey-stage-grid">
+          <div class="journey-stage-block">
+            <h3 class="journey-label"><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-chat"></use></svg> What it contains</h3>
+            <p>Show your developed ideas to your client and ask <strong>which they&rsquo;d choose, and why</strong> &mdash; not just whether they like them.</p>
+          </div>
+          <div class="journey-stage-block">
+            <h3 class="journey-label"><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-question"></use></svg> Why it&rsquo;s done</h3>
+            <p>A folder full of only your own judgement is missing half the evidence AQA is looking for. Ongoing third-party feedback &mdash; not one meeting at the end &mdash; is one of the most commonly missing pieces.</p>
+          </div>
+        </div>
+        <div class="journey-disclosure">
+          <button class="journey-toggle" type="button" aria-expanded="false" aria-controls="example-client" data-disclosure>
+            <span>No access to your client this week?</span>
+            <svg class="nea-icon journey-toggle-chevron" aria-hidden="true"><use href="#nea-icon-chevron"></use></svg>
+          </button>
+          <div class="journey-example" id="example-client" hidden>
+            <h4 class="journey-mini-heading">It still counts if you:</h4>
+            <ul class="journey-ticks">
+              <li>Share sketches or a CAD screen over a call or message thread</li>
+              <li>Screenshot the exchange and add your own commentary beside it</li>
+              <li>Ask a parent or adult to give honest, critical feedback if a client truly isn&rsquo;t reachable</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="section section-quiet journey-part journey-slide" id="part-4" data-slide data-title="Part 4 &middot; From Design to Reality" aria-labelledby="part-4-heading">
+      <p class="journey-part-number" aria-hidden="true">04</p>
+      <div>
+        <p class="section-kicker">Part 4</p>
+        <h2 id="part-4-heading" tabindex="-1">From Design to Reality</h2>
+        <p class="journey-part-sub">Communicating the design &middot; manufacturing &middot; making &middot; testing</p>
+      </div>
+    </section>
+
+    <section class="section journey-slide" id="stage-drawings" data-slide data-title="Stage 7 &middot; Final Drawings" aria-labelledby="stage-drawings-heading">
+      <div class="section-header">
+        <p class="section-kicker">Stage 7</p>
+        <h2 id="stage-drawings-heading" tabindex="-1">Communicating the final design</h2>
+        <p class="journey-lead">Enough detail that someone else could make this <span class="nea-highlight nea-highlight--products">without asking you a single question</span>.</p>
+        <p>Before you open each one, ask: what job does this drawing do?</p>
+      </div>
+      <ul class="journey-tiles">
+        <li class="journey-tile nea-lens nea-lens--products">
+          <button class="journey-tile-button" type="button" aria-expanded="false" aria-controls="tile-iso" data-disclosure>
+            <svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-product"></use></svg>
+            <span class="journey-tile-name">Isometric / 3D views</span>
+            <span class="journey-tile-hint">What does it show? <svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-chevron"></use></svg></span>
+          </button>
+          <p class="journey-tile-body" id="tile-iso" hidden>How the finished piece actually looks from a useful angle.</p>
+        </li>
+        <li class="journey-tile nea-lens nea-lens--products">
+          <button class="journey-tile-button" type="button" aria-expanded="false" aria-controls="tile-exploded" data-disclosure>
+            <svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-layers"></use></svg>
+            <span class="journey-tile-name">Exploded views</span>
+            <span class="journey-tile-hint">What does it show? <svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-chevron"></use></svg></span>
+          </button>
+          <p class="journey-tile-body" id="tile-exploded" hidden>How every part relates to and fits with every other part.</p>
+        </li>
+        <li class="journey-tile nea-lens nea-lens--products">
+          <button class="journey-tile-button" type="button" aria-expanded="false" aria-controls="tile-dimensioned" data-disclosure>
+            <svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-ruler"></use></svg>
+            <span class="journey-tile-name">Dimensioned drawings</span>
+            <span class="journey-tile-hint">What does it show? <svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-chevron"></use></svg></span>
+          </button>
+          <p class="journey-tile-body" id="tile-dimensioned" hidden>Real measurements &mdash; nothing left for guesswork.</p>
+        </li>
+        <li class="journey-tile nea-lens nea-lens--products">
+          <button class="journey-tile-button" type="button" aria-expanded="false" aria-controls="tile-cad" data-disclosure>
+            <svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-screen"></use></svg>
+            <span class="journey-tile-name">CAD model</span>
+            <span class="journey-tile-hint">What does it show? <svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-chevron"></use></svg></span>
+          </button>
+          <p class="journey-tile-body" id="tile-cad" hidden>A digital version that can be checked, shared and refined before you cut anything.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="section section-quiet journey-slide" id="stage-manufacturing" data-slide data-title="Stage 8 &middot; The manufacturing specification" aria-labelledby="stage-manufacturing-heading">
+      <div class="section-header">
+        <p class="section-kicker">Stage 8</p>
+        <h2 id="stage-manufacturing-heading" tabindex="-1">The manufacturing specification</h2>
+        <p class="journey-lead">Your plan for making it &mdash; step by step, written before you touch a machine.</p>
+      </div>
+
+      <div class="journey-stepper nea-lens nea-lens--places" data-stepper data-stepper-unit="Column">
+        <h3 class="journey-mini-heading">One step from a real manufacturing specification</h3>
+        <div class="journey-stepper-controls">
+          <button class="journey-btn" type="button" data-stepper-prev><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-arrow-left"></use></svg><span>Back</span></button>
+          <p class="journey-stepper-status" data-stepper-status>Column 1 of 5</p>
+          <button class="journey-btn journey-btn--primary" type="button" data-stepper-next><span>Reveal next column</span><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-arrow-right"></use></svg></button>
+          <button class="journey-btn journey-btn--quiet" type="button" data-stepper-all>Show all</button>
+        </div>
+        <ol class="journey-steps journey-steps--five journey-steps--table">
+          <li class="journey-step" data-step data-step-title="Step and process">
+            <p class="journey-step-title"><span class="journey-step-num" aria-hidden="true">1</span> Step &amp; process</p>
+            <div class="journey-step-body" data-step-body><p>Cut backrest curve from laminated blank</p></div>
+          </li>
+          <li class="journey-step" data-step data-step-title="Tools and equipment">
+            <p class="journey-step-title"><span class="journey-step-num" aria-hidden="true">2</span> Tools &amp; equipment</p>
+            <div class="journey-step-body" data-step-body><p>Bandsaw, template, sanding drum</p></div>
+          </li>
+          <li class="journey-step" data-step data-step-title="Health and safety">
+            <p class="journey-step-title"><span class="journey-step-num" aria-hidden="true">3</span> Health &amp; safety</p>
+            <div class="journey-step-body" data-step-body><p>Push stick; guard set to blade height; goggles</p></div>
+          </li>
+          <li class="journey-step" data-step data-step-title="Quality check and tolerance">
+            <p class="journey-step-title"><span class="journey-step-num" aria-hidden="true">4</span> Quality check / tolerance</p>
+            <div class="journey-step-body" data-step-body><p>&plusmn; 1mm to template; check by eye and by overlay</p></div>
+          </li>
+          <li class="journey-step" data-step data-step-title="Reflection: what would I change?">
+            <p class="journey-step-title"><span class="journey-step-num" aria-hidden="true">5</span> Reflection: what would I change?</p>
+            <div class="journey-step-body" data-step-body><p>Sand to a finer grade before the next glue-up &mdash; some fibres tore</p></div>
+          </li>
+        </ol>
+      </div>
+
+      <p class="nea-warning"><strong>Every step gets all five</strong> &mdash; a rushed manufacturing plan (thin H&amp;S, no tolerances, no reflection) is one of the most common reasons a strong design loses marks at this stage.</p>
+    </section>
+
+    <section class="section journey-slide" id="stage-make" data-slide data-title="Stages 9&ndash;11 &middot; Make, test, evaluate" aria-labelledby="stage-make-heading">
+      <div class="section-header">
+        <p class="section-kicker">Stages 9&ndash;11</p>
+        <h2 id="stage-make-heading" tabindex="-1">Make, test, evaluate &mdash; then close the loop</h2>
+      </div>
+
+      <ol class="journey-flow">
+        <li class="journey-flow-card nea-lens nea-lens--opportunities" id="step-make">
+          <p class="journey-flow-num">Stage 9</p>
+          <h3><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-wrench"></use></svg> Make</h3>
+          <p>Follow your manufacturing spec; note where reality differed from the plan.</p>
+        </li>
+        <li class="journey-flow-card nea-lens nea-lens--opportunities" id="step-test">
+          <p class="journey-flow-num">Stage 10</p>
+          <h3><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-user"></use></svg> Test</h3>
+          <p>With your client, in the real environment the product is meant for.</p>
+        </li>
+        <li class="journey-flow-card nea-lens nea-lens--opportunities" id="step-evaluate">
+          <p class="journey-flow-num">Stage 11</p>
+          <h3><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-check"></use></svg> Evaluate</h3>
+          <p>Against the <strong>original</strong> specification &mdash; point by point, not a general impression.</p>
+        </li>
+        <li class="journey-flow-card nea-lens nea-lens--loop">
+          <p class="journey-flow-num">Then</p>
+          <h3><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-pencil"></use></svg> Modify</h3>
+          <p>Propose specific changes &mdash; and note what they&rsquo;d mean for the spec itself.</p>
+        </li>
+      </ol>
+
+      <div class="journey-disclosure journey-return nea-lens nea-lens--loop">
+        <button class="journey-toggle" type="button" aria-expanded="false" aria-controls="close-loop" data-disclosure>
+          <svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-loop"></use></svg>
+          <span>Close the loop</span>
+        </button>
+        <div class="journey-return-panel" id="close-loop" hidden>
+          <p class="journey-return-band">
+            <svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-loop"></use></svg>
+            <span>Modify &rarr; <a href="#stage-spec">updated specification</a></span>
+          </p>
+          <p class="nea-key-line">Modifications feed back into an updated specification &mdash; the same document you started with, now shaped by everything you&rsquo;ve learned.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-quiet journey-slide" id="recap" data-slide data-title="Recap &middot; Three things every strong folder has" aria-labelledby="recap-heading">
+      <div class="section-header">
+        <p class="section-kicker">Before you start</p>
+        <h2 id="recap-heading" tabindex="-1">Three things every strong folder has</h2>
+      </div>
+      <ol class="journey-recap-grid">
+        <li class="journey-recap-card nea-lens nea-lens--evidence">
+          <span class="journey-recap-num" aria-hidden="true">1</span>
+          <h3>A reason for every page</h3>
+          <p>If a page can&rsquo;t say why it&rsquo;s there, ask what came before it that should have raised the question.</p>
+          <a class="pdf-link" href="#rule">Revisit the rule</a>
+        </li>
+        <li class="journey-recap-card nea-lens nea-lens--loop">
+          <span class="journey-recap-num" aria-hidden="true">2</span>
+          <h3>A loop, not a line</h3>
+          <p>Idea, evaluate, question, research, develop &mdash; repeated, not run once.</p>
+          <a class="pdf-link" href="#stage-loop">Revisit the loop</a>
+        </li>
+        <li class="journey-recap-card nea-lens nea-lens--problems">
+          <span class="journey-recap-num" aria-hidden="true">3</span>
+          <h3>The ideas you left behind, explained</h3>
+          <p>Rejecting an idea is a design decision too &mdash; justify it like one.</p>
+          <a class="pdf-link" href="#left-behind">Revisit ideas left behind</a>
+        </li>
+      </ol>
+
+      <h3 class="journey-starters-heading">Sentence starters to take away</h3>
+      <div class="journey-starters">
+        <button class="journey-copy" type="button" data-copy="My user is someone who ______, lives in ______, and needs ______ because ______.">
+          <span class="journey-copy-label"><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-copy"></use></svg> Consumer profile <span class="journey-copy-status" data-copy-status>Click to copy</span></span>
+          <span class="journey-copy-text">&ldquo;My user is someone who <span class="nea-token nea-blank"><span class="visually-hidden">blank</span></span>, lives in <span class="nea-token nea-blank"><span class="visually-hidden">blank</span></span>, and needs <span class="nea-token nea-blank"><span class="visually-hidden">blank</span></span> because <span class="nea-token nea-blank"><span class="visually-hidden">blank</span></span>.&rdquo;</span>
+        </button>
+        <button class="journey-copy" type="button" data-copy="I rejected this idea because it failed to meet spec point ___ — specifically, ___.">
+          <span class="journey-copy-label"><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-copy"></use></svg> Ideas left behind <span class="journey-copy-status" data-copy-status>Click to copy</span></span>
+          <span class="journey-copy-text">&ldquo;I rejected this idea because it failed to meet spec point <span class="nea-token nea-blank"><span class="visually-hidden">blank</span></span> &mdash; specifically, <span class="nea-token nea-blank"><span class="visually-hidden">blank</span></span>.&rdquo;</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="section closing-section journey-slide" id="questions" data-slide data-title="Questions?" aria-labelledby="questions-heading">
+      <div class="closing-copy nea-final-message">
+        <p class="section-kicker">Questions?</p>
+        <div class="nea-final-icon" aria-hidden="true">
+          <svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-question"></use></svg>
+        </div>
+        <h2 id="questions-heading" tabindex="-1">Every stage, every question, every rejected idea &mdash; write down why.</h2>
+        <div class="journey-hero-actions">
+          <a class="pdf-link" href="#big-picture">Back to the stage map</a>
+          <a class="pdf-link" href="index.html">Back to portfolio</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="journey-present-controls" data-present-controls hidden>
+    <button class="journey-btn" type="button" data-present-prev><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-arrow-left"></use></svg><span>Previous</span></button>
+    <p class="journey-present-count"><span data-present-count>1 / 1</span><span class="journey-present-title" data-present-title></span></p>
+    <button class="journey-btn journey-btn--primary" type="button" data-present-next><span>Next</span><svg class="nea-icon" aria-hidden="true"><use href="#nea-icon-arrow-right"></use></svg></button>
+    <button class="journey-btn journey-btn--quiet" type="button" data-present-exit>Exit</button>
+  </div>
+  <div class="lightbox" data-lightbox hidden>
+    <div class="lightbox-panel" role="dialog" aria-modal="true" aria-labelledby="lightbox-title">
+      <button class="lightbox-close" type="button" data-lightbox-close aria-label="Close image preview">Close</button>
+      <div class="lightbox-media">
+        <img data-lightbox-image alt="">
+        <div class="lightbox-placeholder" data-lightbox-placeholder>
+          <span>Image needed</span>
+          <strong data-lightbox-kind></strong>
+          <small data-lightbox-path></small>
+        </div>
+      </div>
+      <div class="lightbox-copy">
+        <h2 id="lightbox-title" data-lightbox-title></h2>
+        <p data-lightbox-caption></p>
+      </div>
+    </div>
+  </div>
+  <p class="visually-hidden" role="status" data-journey-announcer></p>
+</body>
+</html>

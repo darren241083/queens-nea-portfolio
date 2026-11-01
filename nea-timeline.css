@@ -1,0 +1,1012 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap");
+
+/* ==========================================================================
+   NEA TIMELINE + COMPACT STRIP
+   Self-contained: every colour and font is declared here, scoped to the
+   component, so this file is safe to drop onto any page on the site.
+   Palette and type follow the Initial Ideas page.
+   Dark mode is opt-in: put data-nea-theme="auto" on the component element
+   (or data-theme="dark" on <html>) only on pages that support dark mode.
+   ========================================================================== */
+
+.nea-timeline,
+.nea-strip {
+  --tl-paper: #eeefe8;
+  --tl-surface: #ffffff;
+  --tl-surface-2: #e4e6db;
+  --tl-ink: #1c1f1a;
+  --tl-ink-soft: #54584e;
+  --tl-line: #c7cabb;
+  --tl-accent: #dd5a1c;
+  --tl-accent-ink: #ffffff;
+
+  --tl-d: #2c5fa0;
+  --tl-d-bg: #e4ebf5;
+  --tl-e: #3a8f5c;
+  --tl-e-bg: #e3f0e8;
+  --tl-f: #7955c4;
+  --tl-f-bg: #ede7f8;
+
+  --tl-amber: #80530a;
+  --tl-amber-bg: #fbf0dc;
+  --tl-amber-line: #e0b36f;
+  --tl-red: #9a2e1c;
+  --tl-red-bg: #fbe8e4;
+  --tl-red-line: #de9a8e;
+  --tl-due: #1c1f1a;
+  --tl-due-ink: #ffffff;
+
+  --tl-radius: 14px;
+  --tl-radius-sm: 10px;
+  --tl-gap: 4px;
+  --tl-lane-h: 132px;
+  --tl-chip-h: 34px;
+  --tl-mark-h: 44px;
+  --tl-track-min: 1040px;
+
+  --tl-sans: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --tl-display: "Big Shoulders Display", "IBM Plex Sans", ui-sans-serif, sans-serif;
+  --tl-mono: "IBM Plex Mono", ui-monospace, monospace;
+
+  color: var(--tl-ink);
+  font-family: var(--tl-sans);
+}
+
+.nea-timeline[data-nea-theme="dark"],
+.nea-strip[data-nea-theme="dark"],
+:root[data-theme="dark"] .nea-timeline,
+:root[data-theme="dark"] .nea-strip {
+  --tl-paper: #17191a;
+  --tl-surface: #1f2220;
+  --tl-surface-2: #272a26;
+  --tl-ink: #edeee7;
+  --tl-ink-soft: #a9ac9f;
+  --tl-line: #383b34;
+  --tl-accent: #ff7a3d;
+  --tl-accent-ink: #1c1f1a;
+
+  --tl-d: #6fa1e0;
+  --tl-d-bg: #1e2a38;
+  --tl-e: #67c08a;
+  --tl-e-bg: #1b2c22;
+  --tl-f: #ac94e8;
+  --tl-f-bg: #272036;
+
+  --tl-amber: #f0c070;
+  --tl-amber-bg: #342a14;
+  --tl-amber-line: #8a6a28;
+  --tl-red: #f3a79a;
+  --tl-red-bg: #38201c;
+  --tl-red-line: #96503f;
+  --tl-due: #edeee7;
+  --tl-due-ink: #17191a;
+}
+
+@media (prefers-color-scheme: dark) {
+  .nea-timeline[data-nea-theme="auto"],
+  .nea-strip[data-nea-theme="auto"] {
+    --tl-paper: #17191a;
+    --tl-surface: #1f2220;
+    --tl-surface-2: #272a26;
+    --tl-ink: #edeee7;
+    --tl-ink-soft: #a9ac9f;
+    --tl-line: #383b34;
+    --tl-accent: #ff7a3d;
+    --tl-accent-ink: #1c1f1a;
+
+    --tl-d: #6fa1e0;
+    --tl-d-bg: #1e2a38;
+    --tl-e: #67c08a;
+    --tl-e-bg: #1b2c22;
+    --tl-f: #ac94e8;
+    --tl-f-bg: #272036;
+
+    --tl-amber: #f0c070;
+    --tl-amber-bg: #342a14;
+    --tl-amber-line: #8a6a28;
+    --tl-red: #f3a79a;
+    --tl-red-bg: #38201c;
+    --tl-red-line: #96503f;
+    --tl-due: #edeee7;
+    --tl-due-ink: #17191a;
+  }
+}
+
+/* A page that forces light wins over the auto rule above */
+:root[data-theme="light"] .nea-timeline,
+:root[data-theme="light"] .nea-strip {
+  --tl-paper: #eeefe8;
+  --tl-surface: #ffffff;
+  --tl-surface-2: #e4e6db;
+  --tl-ink: #1c1f1a;
+  --tl-ink-soft: #54584e;
+  --tl-line: #c7cabb;
+  --tl-accent: #dd5a1c;
+  --tl-accent-ink: #ffffff;
+  --tl-d: #2c5fa0;
+  --tl-d-bg: #e4ebf5;
+  --tl-e: #3a8f5c;
+  --tl-e-bg: #e3f0e8;
+  --tl-f: #7955c4;
+  --tl-f-bg: #ede7f8;
+  --tl-amber: #80530a;
+  --tl-amber-bg: #fbf0dc;
+  --tl-amber-line: #e0b36f;
+  --tl-red: #9a2e1c;
+  --tl-red-bg: #fbe8e4;
+  --tl-red-line: #de9a8e;
+  --tl-due: #1c1f1a;
+  --tl-due-ink: #ffffff;
+}
+
+/* Per-section colour, used by blocks, chips and markers */
+.nea-timeline [data-section="D"] {
+  --tl-sec: var(--tl-d);
+  --tl-sec-bg: var(--tl-d-bg);
+}
+
+.nea-timeline [data-section="E"] {
+  --tl-sec: var(--tl-e);
+  --tl-sec-bg: var(--tl-e-bg);
+}
+
+.nea-timeline [data-section="F"] {
+  --tl-sec: var(--tl-f);
+  --tl-sec-bg: var(--tl-f-bg);
+}
+
+.nea-timeline .nea-tl-icon,
+.nea-strip .nea-tl-icon {
+  width: 15px;
+  height: 15px;
+  flex: none;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.9;
+}
+
+/* ---------- preview banner ---------- */
+
+.nea-tl-preview {
+  margin: 0 0 18px;
+  padding: 9px 14px;
+  border: 1px dashed var(--tl-accent);
+  border-radius: var(--tl-radius-sm);
+  color: var(--tl-ink);
+  font-family: var(--tl-mono);
+  font-size: 0.74rem;
+  letter-spacing: 0.02em;
+}
+
+/* ---------- horizontal timeline ---------- */
+
+.nea-tl-scroller {
+  max-width: 100%;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  -webkit-overflow-scrolling: touch;
+}
+
+.nea-tl-scroller:focus-visible {
+  outline: 3px solid var(--tl-accent);
+  outline-offset: 4px;
+}
+
+.nea-tl-track {
+  position: relative;
+  min-width: var(--tl-track-min);
+  padding-top: var(--tl-chip-h);
+  /* room for the half of the last marker that sits past the final block,
+     so a full-width timeline never shows a scrollbar for a few stray pixels */
+  padding-right: 22px;
+}
+
+.nea-tl-lane {
+  display: flex;
+  gap: var(--tl-gap);
+  height: var(--tl-lane-h);
+  align-items: stretch;
+}
+
+.nea-tl-block {
+  display: flex;
+  min-width: 0;
+  flex: 1 1 0;
+  flex-direction: column;
+  gap: 4px;
+  padding: 11px 12px 10px;
+  border: 1px solid var(--tl-line);
+  border-radius: var(--tl-radius-sm);
+  background: var(--tl-sec-bg, var(--tl-surface));
+  color: var(--tl-ink);
+  text-decoration: none;
+  transition: transform 0.15s ease, border-color 0.15s ease;
+}
+
+a.nea-tl-block {
+  border-color: color-mix(in srgb, var(--tl-sec, var(--tl-line)) 42%, var(--tl-line));
+}
+
+a.nea-tl-block:hover {
+  border-color: var(--tl-sec, var(--tl-accent));
+  transform: translateY(-2px);
+}
+
+a.nea-tl-block:focus-visible {
+  outline: 3px solid var(--tl-accent);
+  outline-offset: 2px;
+}
+
+.nea-tl-block[data-state="past"] {
+  background: var(--tl-surface);
+  color: var(--tl-ink-soft);
+}
+
+.nea-tl-block[data-state="current"] {
+  position: relative;
+  z-index: 2;
+  box-shadow: inset 0 0 0 2px var(--tl-sec, var(--tl-accent));
+}
+
+.nea-tl-block--closed {
+  flex-direction: column;
+  justify-content: flex-end;
+  border-style: dashed;
+  background: repeating-linear-gradient(
+      135deg,
+      transparent,
+      transparent 7px,
+      var(--tl-surface-2) 7px,
+      var(--tl-surface-2) 14px
+    ),
+    var(--tl-surface);
+  color: var(--tl-ink-soft);
+}
+
+.nea-tl-block-head {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nea-tl-block-section {
+  display: inline-flex;
+  width: 20px;
+  height: 20px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--tl-sec, var(--tl-ink-soft));
+  color: #ffffff;
+  font-family: var(--tl-mono);
+  font-size: 0.66rem;
+  font-weight: 600;
+}
+
+.nea-tl-block-state {
+  color: var(--tl-ink-soft);
+  font-family: var(--tl-mono);
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.nea-tl-block[data-state="current"] .nea-tl-block-state {
+  padding: 2px 7px;
+  border-radius: 999px;
+  background: var(--tl-sec, var(--tl-accent));
+  color: #ffffff;
+}
+
+.nea-tl-block-label {
+  overflow-wrap: anywhere;
+  font-size: 0.92rem;
+  font-weight: 600;
+  hyphens: auto;
+  line-height: 1.18;
+}
+
+.nea-tl-block-days {
+  margin-top: auto;
+  color: var(--tl-ink-soft);
+  font-family: var(--tl-mono);
+  font-size: 0.62rem;
+  line-height: 1.3;
+}
+
+/* today marker */
+
+.nea-tl-today {
+  position: absolute;
+  z-index: 1;
+  top: 2px;
+  height: calc(var(--tl-chip-h) + var(--tl-lane-h) - 2px);
+  pointer-events: none;
+}
+
+.nea-tl-today-chip {
+  display: inline-block;
+  padding: 3px 9px;
+  border-radius: 999px;
+  background: var(--tl-accent);
+  color: var(--tl-accent-ink);
+  font-family: var(--tl-mono);
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.nea-tl-today[data-edge="start"] .nea-tl-today-chip {
+  transform: none;
+}
+
+.nea-tl-today[data-edge="end"] .nea-tl-today-chip {
+  transform: translateX(-100%);
+}
+
+.nea-tl-today-line {
+  display: block;
+  width: 2px;
+  height: calc(100% - 26px);
+  margin-left: -1px;
+  background: var(--tl-accent);
+}
+
+.nea-tl-today[data-edge="start"] .nea-tl-today-line {
+  margin-left: 0;
+}
+
+/* deadline and check-in markers */
+
+.nea-tl-markrow {
+  position: relative;
+  height: var(--tl-mark-h);
+}
+
+.nea-tl-mark {
+  position: absolute;
+  top: 0;
+  padding: 7px 10px 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  transform: translateX(-50%);
+}
+
+.nea-tl-mark-pin {
+  display: block;
+  width: 13px;
+  height: 13px;
+  border: 2px solid var(--tl-ink);
+  background: var(--tl-ink);
+  transform: rotate(45deg);
+}
+
+.nea-tl-mark[data-type="checkpoint"] .nea-tl-mark-pin {
+  width: 9px;
+  height: 9px;
+  margin: 2px;
+  border: 2px solid var(--tl-ink-soft);
+  border-radius: 50%;
+  background: var(--tl-surface);
+  transform: none;
+}
+
+.nea-tl-mark[data-state="past"] .nea-tl-mark-pin {
+  border-color: var(--tl-line);
+  background: var(--tl-surface);
+}
+
+.nea-tl-mark:focus-visible {
+  outline: 3px solid var(--tl-accent);
+  outline-offset: 2px;
+}
+
+.nea-tl-mark-tip {
+  display: none;
+  position: absolute;
+  z-index: 6;
+  bottom: 100%;
+  left: 50%;
+  width: 216px;
+  margin-bottom: 6px;
+  padding: 10px 12px;
+  border: 1px solid var(--tl-line);
+  border-radius: var(--tl-radius-sm);
+  background: var(--tl-surface);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.14);
+  color: var(--tl-ink);
+  text-align: left;
+  transform: translateX(-50%);
+}
+
+.nea-tl-mark:hover .nea-tl-mark-tip,
+.nea-tl-mark:focus-visible .nea-tl-mark-tip,
+.nea-tl-mark.is-open .nea-tl-mark-tip {
+  display: block;
+}
+
+.nea-tl-mark-tip-type {
+  display: block;
+  margin-bottom: 3px;
+  color: var(--tl-accent);
+  font-family: var(--tl-mono);
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.nea-tl-mark-tip strong {
+  display: block;
+  font-size: 0.86rem;
+  line-height: 1.25;
+}
+
+.nea-tl-mark-tip-date,
+.nea-tl-mark-tip-stage {
+  display: block;
+  margin-top: 3px;
+  color: var(--tl-ink-soft);
+  font-size: 0.74rem;
+}
+
+.nea-tl-mark-tip-stage {
+  font-family: var(--tl-mono);
+  font-size: 0.66rem;
+}
+
+/* ---------- vertical timeline (narrow screens) ---------- */
+
+.nea-tl-vlist {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nea-tl-vitem {
+  margin-bottom: 10px;
+}
+
+.nea-tl-vblock {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 12px 14px;
+  border: 1px solid var(--tl-line);
+  border-left: 4px solid var(--tl-sec, var(--tl-line));
+  border-radius: var(--tl-radius-sm);
+  background: var(--tl-sec-bg, var(--tl-surface));
+  color: var(--tl-ink);
+  text-decoration: none;
+}
+
+.nea-tl-vblock[data-state="past"] {
+  background: var(--tl-surface);
+  color: var(--tl-ink-soft);
+}
+
+.nea-tl-vblock[data-state="current"] {
+  box-shadow: inset 0 0 0 2px var(--tl-sec, var(--tl-accent));
+}
+
+.nea-tl-vblock--closed {
+  border-left-color: var(--tl-line);
+  border-style: dashed;
+  background: var(--tl-surface);
+  color: var(--tl-ink-soft);
+}
+
+.nea-tl-vblock-head {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.nea-tl-vblock-name {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.nea-tl-vmarks {
+  margin: 6px 0 0;
+  padding: 0 0 0 14px;
+  list-style: none;
+}
+
+.nea-tl-vmark {
+  display: grid;
+  grid-template-columns: 16px auto;
+  gap: 2px 8px;
+  padding: 6px 0;
+  border-bottom: 1px dashed var(--tl-line);
+}
+
+.nea-tl-vmark-pin {
+  width: 11px;
+  height: 11px;
+  margin-top: 4px;
+  background: var(--tl-ink);
+  transform: rotate(45deg);
+}
+
+.nea-tl-vmark[data-type="checkpoint"] .nea-tl-vmark-pin {
+  width: 9px;
+  height: 9px;
+  border: 2px solid var(--tl-ink-soft);
+  border-radius: 50%;
+  background: var(--tl-surface);
+  transform: none;
+}
+
+.nea-tl-vmark[data-state="past"] .nea-tl-vmark-pin {
+  background: var(--tl-line);
+}
+
+.nea-tl-vmark-date {
+  color: var(--tl-ink-soft);
+  font-family: var(--tl-mono);
+  font-size: 0.64rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.nea-tl-vmark-label {
+  grid-column: 2;
+  font-size: 0.86rem;
+}
+
+/* ---------- panel ---------- */
+
+.nea-tl-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 1fr);
+  gap: clamp(20px, 3vw, 40px);
+  margin-top: 28px;
+  padding-top: 26px;
+  border-top: 1px dashed var(--tl-line);
+}
+
+.nea-tl-kicker {
+  margin: 0 0 10px;
+  color: var(--tl-accent);
+  font-family: var(--tl-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.nea-tl-panel-title {
+  margin: 0 0 8px;
+  font-family: var(--tl-display);
+  font-size: clamp(1.9rem, 3.4vw, 2.9rem);
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  line-height: 0.95;
+  text-transform: uppercase;
+}
+
+.nea-tl-panel-meta,
+.nea-tl-next-lesson {
+  margin: 0 0 12px;
+  color: var(--tl-ink-soft);
+  font-family: var(--tl-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.nea-tl-next-lesson {
+  color: var(--tl-ink);
+  font-size: 0.78rem;
+}
+
+.nea-tl-note {
+  max-width: 60ch;
+  margin: 0;
+  color: var(--tl-ink-soft);
+  font-size: 0.98rem;
+  line-height: 1.55;
+}
+
+/* ---------- resources, swapped as the stage changes ---------- */
+
+.nea-tl-resources {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.nea-tl-resources .nea-tl-kicker {
+  margin-bottom: 2px;
+}
+
+.nea-tl-res {
+  display: flex;
+  gap: 12px;
+  padding: 12px 14px;
+  align-items: flex-start;
+  border: 1px solid var(--tl-line);
+  border-radius: var(--tl-radius);
+  background: var(--tl-surface);
+  color: var(--tl-ink);
+  text-decoration: none;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.nea-tl-res:hover {
+  border-color: var(--tl-accent);
+  transform: translateY(-2px);
+}
+
+.nea-tl-res:focus-visible {
+  outline: 3px solid var(--tl-accent);
+  outline-offset: 2px;
+}
+
+/* Folder pages are dense, so the thumbnail shows the whole page small
+   rather than an unreadable crop of it */
+.nea-tl-res-thumb {
+  display: block;
+  width: 86px;
+  height: 62px;
+  flex: none;
+  padding: 3px;
+  overflow: hidden;
+  border: 1px solid var(--tl-line);
+  border-radius: var(--tl-radius-sm);
+  background: #ffffff;
+}
+
+.nea-tl-res-thumb img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.nea-tl-res-body {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.nea-tl-res-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.22;
+}
+
+.nea-tl-res-note {
+  color: var(--tl-ink-soft);
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+
+.nea-tl-res-cta {
+  display: inline-flex;
+  gap: 5px;
+  margin-top: 2px;
+  align-items: center;
+  color: var(--tl-accent);
+  font-family: var(--tl-mono);
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* ---------- section A–F row ---------- */
+
+.nea-tl-sections {
+  margin-top: 26px;
+  padding-top: 22px;
+  border-top: 1px dashed var(--tl-line);
+}
+
+.nea-tl-sections-list {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  list-style: none;
+}
+
+.nea-tl-section {
+  display: flex;
+  height: 100%;
+  gap: 10px;
+  padding: 10px 12px;
+  align-items: flex-start;
+  border: 1px solid var(--tl-line);
+  border-radius: var(--tl-radius-sm);
+  background: var(--tl-surface);
+  color: var(--tl-ink);
+  text-decoration: none;
+}
+
+a.nea-tl-section:hover {
+  border-color: var(--tl-sec, var(--tl-accent));
+}
+
+a.nea-tl-section:focus-visible {
+  outline: 3px solid var(--tl-accent);
+  outline-offset: 2px;
+}
+
+.nea-tl-section[aria-current="true"] {
+  border-color: var(--tl-sec, var(--tl-accent));
+  box-shadow: inset 0 0 0 1px var(--tl-sec, var(--tl-accent));
+}
+
+.nea-tl-section.is-disabled {
+  background: var(--tl-surface-2);
+  color: var(--tl-ink-soft);
+  cursor: not-allowed;
+}
+
+.nea-tl-section-letter {
+  display: inline-flex;
+  width: 22px;
+  height: 22px;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--tl-sec, var(--tl-ink-soft));
+  color: #ffffff;
+  font-family: var(--tl-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+}
+
+.nea-tl-section.is-disabled .nea-tl-section-letter {
+  background: var(--tl-ink-soft);
+}
+
+.nea-tl-section-body {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.nea-tl-section-name {
+  font-size: 0.82rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.nea-tl-section-now,
+.nea-tl-section-soon {
+  color: var(--tl-accent);
+  font-family: var(--tl-mono);
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.nea-tl-section-soon {
+  color: var(--tl-ink-soft);
+}
+
+/* ---------- compact strip ---------- */
+
+.nea-strip {
+  border-bottom: 1px solid var(--tl-line);
+  background: var(--tl-surface);
+  font-family: var(--tl-sans);
+}
+
+.nea-strip[data-urgency="amber"] {
+  border-bottom-color: var(--tl-amber-line);
+  background: var(--tl-amber-bg);
+}
+
+.nea-strip[data-urgency="red"] {
+  border-bottom-color: var(--tl-red-line);
+  background: var(--tl-red-bg);
+}
+
+.nea-strip[data-urgency="today"] {
+  border-bottom-color: var(--tl-due);
+  background: var(--tl-due);
+  color: var(--tl-due-ink);
+}
+
+.nea-strip-inner {
+  display: flex;
+  width: min(1320px, 100%);
+  gap: 16px;
+  margin: 0 auto;
+  padding: 9px 20px;
+  align-items: center;
+  color: inherit;
+  text-decoration: none;
+}
+
+.nea-strip-inner:focus-visible {
+  outline: 3px solid var(--tl-accent);
+  outline-offset: -3px;
+}
+
+.nea-strip-progress {
+  position: relative;
+  width: clamp(90px, 18%, 240px);
+  height: 4px;
+  flex: none;
+  border-radius: 999px;
+  background: var(--tl-surface-2);
+}
+
+.nea-strip[data-urgency="today"] .nea-strip-progress {
+  background: rgba(255, 255, 255, 0.26);
+}
+
+.nea-strip-fill {
+  display: block;
+  height: 100%;
+  border-radius: 999px;
+  background: var(--tl-ink-soft);
+}
+
+.nea-strip[data-urgency="today"] .nea-strip-fill {
+  background: var(--tl-due-ink);
+}
+
+.nea-strip-dot {
+  position: absolute;
+  top: 50%;
+  width: 11px;
+  height: 11px;
+  border: 2px solid var(--tl-surface);
+  border-radius: 50%;
+  background: var(--tl-accent);
+  transform: translate(-50%, -50%);
+}
+
+.nea-strip-text {
+  display: flex;
+  min-width: 0;
+  gap: 8px;
+  flex: 1 1 auto;
+  flex-wrap: wrap;
+  align-items: baseline;
+  font-size: 0.84rem;
+}
+
+/* Host pages may colour strong/p globally; the component sets its own */
+.nea-strip strong,
+.nea-strip span,
+.nea-timeline .nea-tl-res span {
+  color: inherit;
+}
+
+.nea-strip-text strong {
+  font-weight: 600;
+}
+
+.nea-strip .nea-strip-sep {
+  color: var(--tl-ink-soft);
+}
+
+.nea-strip[data-urgency="today"] .nea-strip-sep {
+  color: inherit;
+  opacity: 0.6;
+}
+
+.nea-strip-rest {
+  color: inherit;
+  font-family: var(--tl-mono);
+  font-size: 0.76rem;
+}
+
+.nea-strip-preview {
+  padding: 1px 7px;
+  border: 1px dashed currentColor;
+  border-radius: 999px;
+  font-family: var(--tl-mono);
+  font-size: 0.64rem;
+}
+
+.nea-strip-cta {
+  display: inline-flex;
+  gap: 6px;
+  flex: none;
+  align-items: center;
+  color: inherit;
+  font-family: var(--tl-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.nea-strip-inner:hover .nea-strip-cta {
+  color: var(--tl-accent);
+}
+
+.nea-strip[data-urgency="today"] .nea-strip-inner:hover .nea-strip-cta {
+  color: var(--tl-due-ink);
+  text-decoration: underline;
+}
+
+/* Present mode hides the strip: .is-presenting on the NEA Journey page,
+   html.presenting on the Initial Ideas page */
+.is-presenting .nea-strip,
+.nea-journey-page.is-presenting .nea-strip,
+html.presenting .nea-strip {
+  display: none;
+}
+
+/* ---------- responsive ---------- */
+
+@media (max-width: 900px) {
+  .nea-tl-panel {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .nea-tl-sections-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 599px) {
+  .nea-tl-sections-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .nea-strip-progress {
+    display: none;
+  }
+
+  .nea-strip-inner {
+    padding: 8px 16px;
+    gap: 10px;
+  }
+
+  .nea-strip-cta span:not(.nea-tl-icon) {
+    position: absolute;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nea-tl-block,
+  a.nea-tl-block:hover {
+    transform: none;
+    transition: none;
+  }
+}
+
+@media print {
+  .nea-strip,
+  .nea-tl-markrow {
+    display: none;
+  }
+
+  .nea-tl-scroller {
+    overflow: visible;
+  }
+
+  .nea-tl-track {
+    min-width: 0;
+  }
+}
