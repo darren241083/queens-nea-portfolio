@@ -1,0 +1,72 @@
+REVISION PAGE IMAGES — save each file in assets/images/revision/
+The page shows a labelled placeholder until the file exists, then swaps the image in automatically.
+Big hero images: landscape, at least 2400px wide. Card images: 4:3, about 1200px wide.
+
+revision-hero.jpg
+    Big hero: wide shot of the D&T room wall or workbench with design-history references pinned up — sketches of chairs from different eras, road-sign symbols, a circuit board and a recycling symbol.
+
+ch1-movements-hero.jpg
+    Big hero: four generic chairs side by side, each styled to a movement — natural timber with visible joints; stepped geometry with polished metal; tubular steel with simple planes; bright clashing shapes and pattern.
+
+ch2-designers-hero.jpg
+    Big hero: a designer's desk seen from above — concept sketches, a prototype with exposed workings, a road-sign symbol drawing, a minimal control panel, a moulded plywood offcut and a geometric metal object.
+
+ch3-socio-economic-hero.jpg
+    Big hero: a split scene — on one side a plain, standardised wartime-style chair and ration-era room; on the other a modern flat-pack furniture showroom with bright, fast-changing décor.
+
+ch4-technology-hero.jpg
+    Big hero: close-up of a workshop in action — a 3D printer or CNC router mid-job with a CAD model on a screen behind and a small circuit board with sensors on the bench.
+
+ch5-ethics-hero.jpg
+    Big hero: hands of different ages using an everyday product, with material offcuts sorted for reuse and recycling in the background — people and resources together.
+
+movement-arts-and-crafts.jpg
+    A generic timber chair or cabinet with visible hand-cut joints, natural timber and plant-inspired carving.
+
+movement-art-deco.jpg
+    A generic object with stepped geometry, symmetry, strong contrast and polished metal, glass or lacquer surfaces.
+
+movement-bauhaus-modernism.jpg
+    A generic tubular-steel chair or lamp with simple planes, clear geometry and no ornament.
+
+movement-memphis-postmodern.jpg
+    A generic shelf or lamp built from bright contrasting shapes, bold pattern, odd proportions and asymmetry.
+
+designer-starck.jpg
+    A sculptural, characterful household object silhouette — function with humour and a strong form.
+
+designer-dyson.jpg
+    A transparent or cut-away product showing its engineering inside, next to a row of prototype iterations.
+
+designer-calvert.jpg
+    A clear, simple road-information symbol and lettering, drawn as a sketch or diagram (not a copy of a real sign).
+
+designer-rams.jpg
+    A minimal control layout — a few neatly aligned buttons and a dial on a plain panel.
+
+designer-eames.jpg
+    A moulded, ergonomic furniture shell or a curved plywood form being pressed in a mould.
+
+designer-brandt.jpg
+    A geometric metal and glass domestic object — built from circles, hemispheres and straight lines.
+
+socio-post-ww1-bauhaus.jpg
+    An early 20th-century-style factory floor or a row of identical, simply formed metal and glass products.
+
+socio-ww2-utility.jpg
+    Plain, standardised wartime-style furniture in a simple room — sturdy, undecorated, made from minimal material.
+
+socio-consumer-culture.jpg
+    A busy modern homeware or flat-pack furniture store, or delivery boxes piled up from online orders.
+
+tech-microelectronics.jpg
+    A small circuit board with a microcontroller, sensor, wireless module and compact display, on a workbench.
+
+tech-new-materials.jpg
+    A flat-lay of material samples: carbon-fibre composite, a colour-changing smart material, a bio-based polymer and a high-performance alloy part.
+
+tech-new-manufacture.jpg
+    Additive manufacturing (3D printer mid-print), a laser cutter or a robot arm in a flexible production cell.
+
+tech-cad-cam.jpg
+    A CAD screen showing a parametric model or simulation result, with the same part being machined or printed beside it.
